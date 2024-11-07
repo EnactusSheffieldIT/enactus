@@ -2,11 +2,9 @@ please use `git pull --rebase` to keep the git log tidy
 
 todo:
 know visitor geolocation, male or female
-all links
 form action
 
-other site:
-    copy from https://enactussheffield.wixsite.com/home
+https://enactussheffield.wixsite.com/home
 CC:
     login
     course

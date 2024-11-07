@@ -5,7 +5,20 @@ const nextConfig: NextConfig = {
   
   reactStrictMode: true,
   images: {
-    domains: ['images.squarespace-cdn.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.squarespace-cdn.com',
+        port: '',
+        // pathname: '/account123/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.wixstatic.com',
+        port: '',
+        // pathname: '/account123/**',
+      },
+    ],
   },
 };
 

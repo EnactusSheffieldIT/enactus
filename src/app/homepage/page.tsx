@@ -1,18 +1,42 @@
 import Image from "next/image";
 import ProjectCard from "../components/ProjectCard";
 import Review from "../components/customer"
+import Link from "next/link";
 export default function Home() {
     return(
-        <main className="bg-yellow-50">
+        <main className="bg-yellow-50 text-black">
         <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover h-[70vh] md:min-h-[700px]">
           <div className="containerhero  w-full bg-black/50 h-full flex flex-col items-center justify-center">
             <h1 className="text-5xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%]">
-              Tackling the <br/>
+              <div className="inline text-yellow-500">Tackling</div> the <br/>
               problems of today, whilst creating the leaders of tomorrow.
             </h1>
-            <a href="" className="mt-12">Linktree</a>
+            <div className="flex flex-col mt-12 text-white">
+            <div className="flex flex-row ">
+              <div className="w-[24px] invert m-5"
+              dangerouslySetInnerHTML={{
+                __html:
+                  '<a href="https://linktr.ee/enactus_sheffield"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Linktree</title><path d="m13.73635 5.85251 4.00467-4.11665 2.3248 2.3808-4.20064 4.00466h5.9085v3.30473h-5.9365l4.22865 4.10766-2.3248 2.3338L12.0005 12.099l-5.74052 5.76852-2.3248-2.3248 4.22864-4.10766h-5.9375V8.12132h5.9085L3.93417 4.11666l2.3248-2.3808 4.00468 4.11665V0h3.4727zm-3.4727 10.30614h3.4727V24h-3.4727z"/></svg>',
+              }}></div>
+              <div className="w-[24px] invert m-5"
+              dangerouslySetInnerHTML={{
+                __html:
+                  '<a href="https://www.linkedin.com/company/enactus-sheffield-limited/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>',
+              }}></div>
+              <div className="w-[24px] invert m-5"
+              dangerouslySetInnerHTML={{
+                __html:
+                  '<a href="https://www.instagram.com/enactussheffield_/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>',
+              }}></div>
+            </div>
+            <Link href="/apply" className="border-2 p-3 text-center">Join Now!</Link  >
+            
+            </div>
+           
+           
           </div>
         </div>
+        <div className="" id="about"></div>
         <div className="aboutEnactus w-[80%] mx-auto my-32">
           <h1 className="w-full text-center text-5xl font-semibold my-14">What is Enactus?</h1>
           <div className="flex flex-col md:flex-row justify-center items-center">
@@ -44,15 +68,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="ourprojectcontainer py-32 flex justify-center items-center flex-col bg-blue-50">
+        <div id="project" className="ourprojectcontainer py-32 flex justify-center items-center flex-col bg-blue-50">
           <h1 className="w-full text-center text-5xl font-semibold mb-14 ">Our project</h1>
           <div className="grid md:grid-cols-2 grid-flow-row w-auto gap-3 text-center justify-items-center max-w-[1000px]">
-            <ProjectCard image="/files/all logos/OnTarget Logo.png" title="OnTarget" content="Having established a partnership with Sheffield Wednesday -  OnTarget, aims to increase employability prospects of students in Sheffield, and promote the inclusion of at-risk young people through mentor-based activities and events." />
-            <ProjectCard image="/files/all logos/Code Creators.png" title="CodeCreators" content="Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students. " />
-            <ProjectCard image="/main/EMARKETING.png" title="E-marketing" content="(Formerly Be Social Flamingo) EMarketing is Enactus Sheffield's talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university. "></ProjectCard>
-            <ProjectCard image="/files/vape drop/vapedrop_logo_edited.jpg" title="VapeDrop" content="A new local project, is still in its research and development stage. VD focuses on collecting disposable vapes (electronic cigarettes) by introducing our vape drop stop baskets that will be distributed throughout campus, disassembling them and recycling some of their components." />
-            <ProjectCard image="/files/carte/carte logo capitals transparent background.png" title="OnTarget" content="Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices. " />
-            <ProjectCard image="/files/intell.jpg" title="Intellect interpreters" content="Intellect interpreters is a university interpreting service that helps the community with translation services they may require. Our team will be made of students who can speak another language fluently and they will be trained to help people e.g. refugees with filling out forms and making appointments." />
+            <ProjectCard link="/ontarget" image="/files/all logos/OnTarget Logo.png" title="OnTarget" content="Having established a partnership with Sheffield Wednesday -  OnTarget, aims to increase employability prospects of students in Sheffield, and promote the inclusion of at-risk young people through mentor-based activities and events." />
+            <ProjectCard link="/codecreators" image="/files/all logos/Code Creators.png" title="CodeCreators" content="Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students. " />
+            <ProjectCard link="/emarketing" image="/main/EMARKETING.png" title="E-marketing" content="(Formerly Be Social Flamingo) EMarketing is Enactus Sheffield's talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university. "></ProjectCard>
+            <ProjectCard link="/vapedrop" image="/files/vape drop/vapedrop_logo_edited.jpg" title="VapeDrop" content="A new local project, is still in its research and development stage. VD focuses on collecting disposable vapes (electronic cigarettes) by introducing our vape drop stop baskets that will be distributed throughout campus, disassembling them and recycling some of their components." />
+            <ProjectCard link="/carte" image="/files/carte/carte logo capitals transparent background.png" title="OnTarget" content="Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices. " />
+            <ProjectCard link="/ii" image="/files/intell.jpg" title="Intellect interpreters" content="Intellect interpreters is a university interpreting service that helps the community with translation services they may require. Our team will be made of students who can speak another language fluently and they will be trained to help people e.g. refugees with filling out forms and making appointments." />
           </div>
         </div>
         <div className="ourachievementcontainer my-32">
@@ -62,15 +86,15 @@ export default function Home() {
                 <h1 className=" text-4xl font-semibold">National Expo</h1>
                 <p className="text-xl">For the last decade we have been participating in the UK National Expo, where teams from across the country share their fantastic accomplishments.</p>
               </div>
-              <div className="flex flex-col justify-center items-center border-2 p-5 text-center">
+              <div className="flex flex-col justify-center items-center bg-orange-200 p-5 text-center">
                 <div className="text-3xl">2023</div>
                   <p>This year we got into regional finals and compete in top 15 national</p>
                 </div>
-              <div className="flex flex-col justify-center items-center border-2 p-5 text-center">
+              <div className="flex flex-col justify-center items-center bg-orange-200 p-5 text-center">
                 <div className="text-3xl">2024</div>
                   <p> Can Sheffield be the winner of Enactus World Cup? Stay tuned to our National Expo in 25th April, 2025</p>
                 </div>
-              <div className="flex col-span-2 flex-col justify-center items-center border-2 p-5">
+              <div className="flex col-span-2 flex-col justify-center items-center bg-orange-200 p-5">
                 <div className="text-3xl">2022</div>
                 <div className="flex flex-col md:flex-row items-center jusitfy center gap-24">
                   <Image src="/main/hero-award.jpg" width={600} height={500} alt="Vercel Logo" className="h-[300px]"></Image>
@@ -84,11 +108,11 @@ export default function Home() {
                 <h1>Successful story</h1>
               </div>
               <div className="flex col-span-2 flex-col md:flex-row justify-center items-center md:items-start gap-12">
-                  <div className="flex flex-col justify-center items-center w-[90%] md:w-[40%]">
+                  <a href="https://motion.org.uk/" className="flex flex-col justify-center items-center w-[90%] md:w-[40%]">
                     <div className="text-3xl">motion</div>
                     <Image src="/files/all logos/Motion.png" width={400} height={200} alt="Vercel Logo" className="h-[180px]"></Image>
                     <p>A digital platform for care services to showcase improved care outcomes to existing and prospective families to boost their customer satisfaction and increase occupancy.</p>
-                  </div>
+                  </a>
                   <div className="flex flex-col justify-center items-center w-[90%] md:w-[40%]">
                     <div className="text-3xl">FreeFlow</div>
                     <Image src="/files/all logos/FreeFlow.png" width={200} height={200} alt="Vercel Logo" className="h-[180px]"></Image>
@@ -140,7 +164,7 @@ export default function Home() {
                 src="/files/Site Files/image.png" width={1000} height="0" alt="Vercel Logo" className="block mx-auto"></Image>
           
         </div>
-        <div className="my-32">
+        <div className="mt-32">
             <h1 className="w-full text-center text-5xl font-semibold mb-14">Our partners</h1>
             <div className="flex flex-row flex-wrap w-[80%] md:w-[70%] max-w-[900px] mx-auto gap-10 justify-center items-center">
                 <p><a href="https://www.fordphilanthropy.org/our-work"><Image width={100} height={100} className="sponsorlogo" src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/5249fc11-83eb-4cbc-8fa2-6104630b4495/Ford+Philanthropy+Logo.png" alt="Ford Philanthropy Logo.png"/></a></p>
@@ -167,8 +191,8 @@ export default function Home() {
       
             </div>
         </div>
-
-      <div className="ourcontactcontainer">
+<div id="contact"></div>
+      <div className="ourcontactcontainer mt-32">
           <h1 className="w-full text-center text-5xl font-semibold mb-14">Contact US</h1>
             <form action="post" className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
               <label htmlFor="name">Name</label>
@@ -177,7 +201,7 @@ export default function Home() {
               <input type="text" name="email" placeholder="contact@enactussheffield.org" className=" border-2"/>
               <label htmlFor="message">Message</label>
               <textarea name="message" id="" className="h-[100px] border-2"></textarea>
-              <input type="submit" value="send" className=" bg-blue-600 text-white mt-7 hover:bg-gray-300 hover:border-transparent"/>
+              <input type="submit" value="send" className="hover:cursor-pointer bg-blue-600 text-white mt-7 hover:bg-gray-300 hover:border-transparent"/>
             </form>
             <div className="bg-black text-white pb-10 pt-12">
                 <h1 className="w-full text-center text-4xl font-semibold mb-10 bg-">Subscribe to our Newsletter</h1>
@@ -185,7 +209,7 @@ export default function Home() {
                   
                   <label htmlFor="email ">Email</label>
                   <input type="text" name="email" placeholder="subscribe@ssheffield.ac.uk  " className=" border-2"/>
-                  <input type="submit" value="send" className="p-1 rounded bg-blue-600 text-white hover:bg-gray-300 hover:border-transparent"/>
+                  <input type="submit" value="send" className="hover:cursor-pointer p-1 rounded bg-blue-600 text-white hover:bg-gray-300 hover:border-transparent"/>
                 </form>
             </div>
           

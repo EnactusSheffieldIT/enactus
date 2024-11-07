@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Home(props) {
 
     return (
         <>
-           <div className="flex flex-col items-center w-[500px] justify-center">
+           <Link href={props.link} className="flex flex-col items-center w-[500px] justify-center">
               <div className="h-[213px] flex justify-end items-center">
                 <Image
                 src={props.image}
@@ -16,6 +17,6 @@ export default function Home(props) {
               
               <h2 className="text-3xl border-b-2 border-black w-[300px] pb-1 my-5">{props.title}</h2>
               <p className="pb-[20px] px-4">{props.content}</p>
-            </div> 
+            </Link> 
         </>
     )}
