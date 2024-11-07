@@ -112,7 +112,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="ourcommitteecontainer my-32 flex justify-center items-center flex-wrap">
+        <div className="ourcommitteecontainer py-32 flex justify-center items-center flex-wrap bg-blue-50">
           <h1 className="w-full text-center text-5xl font-semibold mb-14">Latest News</h1>
           <script async src="//www.instagram.com/embed.js"></script>
           <div className=" flex flex-row [&>*]:mx-3 flex-wrap justify-center">
@@ -134,7 +134,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="ourcommitteecontainer my-32">
+        <div className="ourcommitteecontainer pb-32 bg-blue-50">
           <h1 className="w-full text-center text-5xl font-semibold mb-14">Meet the committee</h1>
           <Image
                 src="/files/Site Files/image.png" width={1000} height="0" alt="Vercel Logo" className="block mx-auto"></Image>
@@ -168,9 +168,9 @@ export default function Home() {
             </div>
         </div>
 
-      <div className="ourcontactcontainer pb-64">
+      <div className="ourcontactcontainer">
           <h1 className="w-full text-center text-5xl font-semibold mb-14">Contact US</h1>
-            <form action="post" className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto">
+            <form action="post" className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" placeholder="Lucy Fox" className=" border-2"/>
               <label htmlFor="email ">Email</label>
@@ -179,6 +179,16 @@ export default function Home() {
               <textarea name="message" id="" className="h-[100px] border-2"></textarea>
               <input type="submit" value="send" className=" bg-blue-600 text-white mt-7 hover:bg-gray-300 hover:border-transparent"/>
             </form>
+            <div className="bg-black text-white pb-10 pt-12">
+                <h1 className="w-full text-center text-4xl font-semibold mb-10 bg-">Subscribe to our Newsletter</h1>
+                <form action="post" className="flex flex-row  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
+                  
+                  <label htmlFor="email ">Email</label>
+                  <input type="text" name="email" placeholder="subscribe@ssheffield.ac.uk  " className=" border-2"/>
+                  <input type="submit" value="send" className="p-1 rounded bg-blue-600 text-white hover:bg-gray-300 hover:border-transparent"/>
+                </form>
+            </div>
+          
         </div>
       </main>
     )
