@@ -17,6 +17,18 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Enactus Sheffield",
   description: "A social enterprise society at the University of Sheffield",
+  openGraph: {
+    title: "Enactus Sheffield",
+    description: "A social enterprise society at the University of Sheffield",
+    url:'/favicon.png',
+    site_name:'',
+  },
+  openGraph: {
+    title: "Enactus Sheffield",
+    description: "A social enterprise society at the University of Sheffield",
+    card:'',
+    image:'/favicon.png',
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +38,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.png" sizes="any" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
