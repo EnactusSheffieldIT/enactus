@@ -11,8 +11,7 @@ export default function Home(props) {
                 alt="Vercel Logo"
                 className="block"
               ></Image>
-              <h2 className="text-3xl">{props.title}</h2>
-              <div className="scale-[25] scale-x-150 rotate-[90deg] font-[math]">-</div>
+              <h2 className="text-3xl border-b-2 border-black w-[300px] pb-1 my-5">{props.title}</h2>
               <p className="mb-[120px] mx-4">{props.content}</p>
             </div> 
         </>
