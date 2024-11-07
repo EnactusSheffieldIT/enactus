@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Viewport } from 'next'
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
@@ -17,19 +18,36 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Enactus Sheffield",
   description: "A social enterprise society at the University of Sheffield",
+  keywords: "social,enterprise,society,university,sheffield",
   openGraph: {
     title: "Enactus Sheffield",
     description: "A social enterprise society at the University of Sheffield",
-    url:'/favicon.png',
-    images:'',
+    url: 'enactussheffield.org',
+    images: '/favicon.png',
   },
-  openGraph: {
+  twitter: {
+    site: "enactussheffield.org",
+    siteId: "",
+    creator: "Shalev Lau",
+    creatorId: "",
     title: "Enactus Sheffield",
     description: "A social enterprise society at the University of Sheffield",
-    card:'',
-    image:'/favicon.png',
+    images: "/favicon.png"
   },
 };
+
+export const viewport: Viewport = {
+
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  colorScheme: 'light',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+}
 
 export default function RootLayout({
   children,
@@ -38,8 +56,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
