@@ -12,7 +12,7 @@ export default function Home() {
     return (
       <>
         <header className="flex flex-row justify-evenly items-center bg-black text-white sticky top-0 z-20">
-          <div className="flex flex-col my-5">
+          <Link href="/" className="flex flex-col my-5">
           <Image
           // layout="responsive"
             src="/main/logo.png"
@@ -25,7 +25,7 @@ export default function Home() {
           ></Image>
          
           <h2 className="ml-5 text-sm">University of Sheffield</h2>
-          </div>
+          </Link>
           <div className="flex md:hidden basis-auto">
             <button onClick={toggleNavbar}>
               {isClick ? (
