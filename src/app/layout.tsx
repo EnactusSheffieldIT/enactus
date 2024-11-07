@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Enactus Sheffield",
     description: "A social enterprise society at the University of Sheffield",
     url:'/favicon.png',
-    site_name:'',
+    image:'',
   },
   openGraph: {
     title: "Enactus Sheffield",
