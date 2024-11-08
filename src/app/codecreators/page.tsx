@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <>  
         <Head></Head>
-        <h1>hi</h1>
+        <h1>hi there</h1>
         <Footer></Footer>
         </>
     )
