@@ -81,20 +81,20 @@ export default function Home() {
         </div>
         <div className="ourachievementcontainer my-32">
           <h1 className="w-full text-center text-5xl font-semibold mb-14">Our Achievement</h1>
-            <div className="grid md:grid-cols-2 justify-items-center gap-12 md:w-[90%] mx-auto text-center md:text-start max-w-[1000px]">
+            <div className="grid md:grid-cols-2 justify-items-center gap-3 md:gap-12 md:w-[90%] mx-auto text-center md:text-start max-w-[1000px]">
               <div className="col-span-2 p-5 !text-center">
                 <h1 className=" text-4xl font-semibold">National Expo</h1>
                 <p className="text-xl">For the last decade we have been participating in the UK National Expo, where teams from across the country share their fantastic accomplishments.</p>
               </div>
-              <div className="flex flex-col justify-center items-center bg-orange-200 p-5 text-center">
+              <div className="flex flex-col justify-center items-center bg-orange-200/50 p-5 text-center">
                 <div className="text-3xl">2023</div>
                   <p>This year we got into regional finals and compete in top 15 national</p>
                 </div>
-              <div className="flex flex-col justify-center items-center bg-orange-200 p-5 text-center">
+              <div className="flex flex-col justify-center items-center bg-orange-200/50 p-5 text-center">
                 <div className="text-3xl">2024</div>
                   <p> Can Sheffield be the winner of Enactus World Cup? Stay tuned to our National Expo in 25th April, 2025</p>
                 </div>
-              <div className="flex col-span-2 flex-col justify-center items-center bg-orange-200 p-5">
+              <div className="flex col-span-2 flex-col justify-center items-center bg-orange-500/25 p-5">
                 <div className="text-3xl">2022</div>
                 <div className="flex flex-col md:flex-row items-center jusitfy center gap-24">
                   <Image src="/main/hero-award.jpg" width={600} height={500} alt="Vercel Logo" className="h-[300px]"></Image>
