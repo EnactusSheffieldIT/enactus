@@ -16,7 +16,7 @@ export default function Home(props) {
               </div>
               
               <h2 className="text-3xl border-b-2 border-black w-[300px] pb-1 my-5">{props.title}</h2>
-              <p className="pb-[20px] px-4">{props.content}</p>
+              <p className="pb-[20px] px-4 max-w-[90vw] md:max-w-[40vw]">{props.content}</p>
             </Link> 
         </>
     )}

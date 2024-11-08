@@ -10,12 +10,13 @@ export default function Home() {
 
 
                     <a href="https://enactussheffield.wixsite.com/home/ontarget"> <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_1a30255414054562936cc5962270968f~mv2.png/v1/fill/w_313,h_173,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/OnTarget%20Logo.png" alt="OnTarget Logo.png" /></a>
-                    <p className="flex-row flex gap-x-10"><p><a href="https://enactussheffield.wixsite.com/home/ontarget">ABOUT</a></p>
-                        <p><a href="https://enactussheffield.wixsite.com/home/ontarget">GET INVOLVED</a></p>
-                        <p><a href="https://enactussheffield.wixsite.com/home/general-4">OUR PROGRAMME</a></p>
-                        <p><a href="https://enactussheffield.wixsite.com/home/events">EVENTS</a></p>
-                        <p><a href="https://enactussheffield.wixsite.com/home/ontarget">PARTNERS</a></p>
-                        <p><a href="https://enactussheffield.wixsite.com/home/resources">RESOURCES</a></p>
+                    <p className="flex-row flex gap-x-10">
+                        <a href="https://enactussheffield.wixsite.com/home/ontarget">ABOUT</a>
+                        <a href="https://enactussheffield.wixsite.com/home/ontarget">GET INVOLVED</a>
+                        <a href="https://enactussheffield.wixsite.com/home/general-4">OUR PROGRAMME</a>
+                        <a href="https://enactussheffield.wixsite.com/home/events">EVENTS</a>
+                        <a href="https://enactussheffield.wixsite.com/home/ontarget">PARTNERS</a>
+                        <a href="https://enactussheffield.wixsite.com/home/resources">RESOURCES</a>
                     </p>
                 </div>
                 <h1 className="text-6xl ">Welcome to OnTarget!</h1>

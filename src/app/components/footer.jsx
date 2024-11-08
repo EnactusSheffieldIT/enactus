@@ -1,15 +1,20 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className="overflow-hidden">
       <div className="bg-[url('/files/Site%20Files/leaf.jpg')] flex flex-col justify-center items-center text-white ">
       <div className="flex flex-col md:flex-row justify-center items-center">
       {/* https://www.embedgooglemap.net/ */}
-      <div className="flex flex-col my-20 md:mb-0">
+      <div className="flex flex-col md:my-20 md:mb-0">
           <h3>Our business</h3>
-          <div className=""
+          <div className="hidden md:block"
           dangerouslySetInnerHTML={{
             __html:
               '<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="212" id="gmap_canvas" src="https://maps.google.com/maps?q=north%20campus%20enactus&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:212px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:212px;width:600px;}</style></div></div>',
+          }} ></div>
+          <div className="md:hidden w-[90vw]"
+          dangerouslySetInnerHTML={{
+            __html:
+              '<div class="mapouter"><div class="gmap_canvas"><iframe width="600" class="w-[90vw]" height="212" id="gmap_canvas" src="https://maps.google.com/maps?q=north%20campus%20enactus&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:212px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:212px;width:600px;}</style></div></div>',
           }} ></div>
       </div>
           
