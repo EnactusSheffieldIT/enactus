@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
         <div id="project" className="ourprojectcontainer py-32 flex justify-center items-center flex-col bg-blue-50">
-          <h1 className="w-full text-center text-5xl font-semibold mb-14 ">Our project</h1>
+          <h1 className="w-full text-center text-5xl font-semibold mb-14 ">Our projects</h1>
           <div className="grid md:grid-cols-2 grid-flow-row w-auto md:gap-3 text-center justify-items-center max-w-[1000px]">
             <ProjectCard link="/ontarget" image="/files/all logos/OnTarget Logo.png" title="OnTarget" content="Having established a partnership with Sheffield Wednesday -  OnTarget, aims to increase employability prospects of students in Sheffield, and promote the inclusion of at-risk young people through mentor-based activities and events." />
             <ProjectCard link="/codecreators" image="/files/all logos/Code Creators.png" title="CodeCreators" content="Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students. " />
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
         <div className="ourachievementcontainer my-32">
-          <h1 className="w-full text-center text-5xl font-semibold mb-14">Our Achievement</h1>
+          <h1 className="w-full text-center text-5xl font-semibold mb-14">Our Achievements</h1>
             <div className="grid md:grid-cols-2 justify-items-center gap-3 md:gap-12 md:w-[90%] mx-auto text-center md:text-start max-w-[1000px]">
               <div className="col-span-2 p-5 !text-center">
                 <h1 className=" text-4xl font-semibold">National Expo</h1>
@@ -105,7 +105,7 @@ export default function Home() {
                   </div>
               </div>
               <div className="flex col-span-2 pt-16 pb-0 text-4xl font-semibold">
-                <h1>Successful story</h1>
+                <h1>Success Stories</h1>
               </div>
               <div className="flex col-span-2 flex-col md:flex-row justify-center items-center md:items-start gap-12">
                   <a href="https://motion.org.uk/" className="flex flex-col justify-center items-center w-[90%] md:w-[40%]">
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
              
               <div className="flex col-span-2 p-10 text-4xl">
-                <h1>Customer Review</h1>
+                <h1>Customer Reviews</h1>
               </div>
               <div className="col-span-2 ">
                 <div className="grid md:grid-cols-3 justify-items-center gap-12 md:w-[90%] mx-auto">
