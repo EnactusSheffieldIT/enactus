@@ -18,9 +18,9 @@ export default function Footer() {
           }} ></div>
       </div>
           
-        <div className="md:ml-12 flex flex-col">
+        <div className="md:ml-12 flex flex-col max-w-[90vw]">
           <h3>Links:</h3>
-          <div className="flex flex-row [&>*]:mx-5 my-2">
+          <div className="flex flex-row [&>*]:mx-1 md:[&>*]:mx-5 my-2">
             
             <div className="w-[24px] invert"
             dangerouslySetInnerHTML={{

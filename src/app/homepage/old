@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
     return(
         <main className="bg-yellow-50 text-black overflow-hidden">
-        <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover min-h-[70vh] md:h-[700px] relative flex justify-center items-center">
+        <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover min-h-[70vh] md:h-[700px] relative">
           <div className="containerhero  w-full bg-black/50 md:h-[700px] h-full flex flex-col items-center justify-center p-5 md:p-0 relative">
             <h1 className="text-5xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%]">
               <div className="inline text-yellow-500">Tackling</div> the <br/>
@@ -50,26 +50,26 @@ export default function Home() {
               </div>
           <div className="grid md:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16">
 
-            <div className="flex flex-col items-center border-b-2 border-black md:border-b-0">
-              <Image src="/main/EnactusUniversityClipart.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]" ></Image>
+            <div className="flex  flex-col items-center">
+              <Image src="/main/EnactusUniversityClipart.png" width={400} height={200} alt="Vercel Logo" className="block" ></Image>
               <p>Enactus Sheffield is one of over 1,700 Enactus teams around the world, all working on developing social impact projects.
                 Student-led social enterprise, which sits within the University’s Partnerships and Regional Engagement department</p>
             </div>
-            <div className="flex flex-col items-center border-b-2 border-black md:border-b-0">
+            <div className="flex flex-col items-center">
               <Image
-                src="/files/Site Files/Enactus+Team+Clipart.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/Site Files/Enactus+Team+Clipart.png" width={400} height={200} alt="Vercel Logo" className="block"></Image>
               <p>Our members innovate, research and manage social impact projects which provide sustainable solutions to local issues. Being part of Enactus is a unique and valuable experience as it facilitates student development in a broad range of areas, such as commercial and social entrepreneurship, technical experience and confidence building.</p>
             </div>
-            <div className="flex flex-col items-center border-b-2 border-black md:border-b-0">
+            <div className="flex flex-col items-center">
               <Image
-                src="/files/Site Files/Enactus+Trophy+Clipart.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/Site Files/Enactus+Trophy+Clipart.png" width={400} height={200} alt="Vercel Logo" className="block"></Image>
               <p>We believe that Enactus is a great stepping stone to future employment, and a unique opportunity to learn a variety of skills in different fields.
                 Every year, we will complete in National Expo in honour to our hard work over the year.</p>
             </div>
           </div>
         </div>
         <div id="project" className="ourprojectcontainer py-32 flex justify-center items-center flex-col bg-blue-50">
-          <h1 className="w-full text-center text-5xl font-semibold mb-14 ">Our projects</h1>
+          <h1 className="w-full text-center text-5xl font-semibold mb-14 ">Our project</h1>
           <div className="grid md:grid-cols-2 grid-flow-row w-auto md:gap-3 text-center justify-items-center max-w-[1000px]">
             <ProjectCard link="/ontarget" image="/files/all logos/OnTarget Logo.png" title="OnTarget" content="Having established a partnership with Sheffield Wednesday -  OnTarget, aims to increase employability prospects of students in Sheffield, and promote the inclusion of at-risk young people through mentor-based activities and events." />
             <ProjectCard link="/codecreators" image="/files/all logos/Code Creators.png" title="CodeCreators" content="Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students. " />
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
         <div className="ourachievementcontainer my-32">
-          <h1 className="w-full text-center text-5xl font-semibold mb-14">Our Achievements</h1>
+          <h1 className="w-full text-center text-5xl font-semibold mb-14">Our Achievement</h1>
             <div className="grid md:grid-cols-2 justify-items-center gap-3 md:gap-12 md:w-[90%] mx-auto text-center md:text-start max-w-[1000px]">
               <div className="col-span-2 p-5 !text-center">
                 <h1 className=" text-4xl font-semibold">National Expo</h1>
@@ -105,7 +105,7 @@ export default function Home() {
                   </div>
               </div>
               <div className="flex col-span-2 pt-16 pb-0 text-4xl font-semibold">
-                <h1>Success Stories</h1>
+                <h1>Successful story</h1>
               </div>
               <div className="flex col-span-2 flex-col md:flex-row justify-center items-center md:items-start gap-12">
                   <a href="https://motion.org.uk/" className="flex flex-col justify-center items-center w-[90%] md:w-[40%]">
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
              
               <div className="flex col-span-2 p-10 text-4xl">
-                <h1>Customer Reviews</h1>
+                <h1>Customer Review</h1>
               </div>
               <div className="col-span-2 ">
                 <div className="grid md:grid-cols-3 justify-items-center gap-12 md:w-[90%] mx-auto">
@@ -205,10 +205,11 @@ export default function Home() {
             </form>
             <div className="bg-black text-white pb-10 pt-12">
                 <h1 className="w-full text-center text-4xl font-semibold mb-10 bg-">Subscribe to our Newsletter</h1>
-                <form action="post" className="flex flex-row flex-wrap  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
+                <form action="post" className="flex flex-row  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
+                  
                   <label htmlFor="email ">Email</label>
                   <input type="text" name="email" placeholder="subscribe@ssheffield.ac.uk  " className=" border-2"/>
-                  <input type="submit" value="send" className="hover:cursor-pointer p-1 rounded bg-blue-600 text-white hover:bg-gray-300 hover:border-transparent block"/>
+                  <input type="submit" value="send" className="hover:cursor-pointer p-1 rounded bg-blue-600 text-white hover:bg-gray-300 hover:border-transparent"/>
                 </form>
             </div>
           

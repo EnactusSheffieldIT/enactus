@@ -7,16 +7,16 @@ export default function Home() {
             <Head></Head>
             {/* https://enactussheffield.wixsite.com/home/carte */}
 
-            <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_747a6d773ea942b299dffbfc0c29d022~mv2.png/v1/fill/w_234,h_177,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8c34f9_747a6d773ea942b299dffbfc0c29d022~mv2.png"    alt=""   />
+            {/* <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_747a6d773ea942b299dffbfc0c29d022~mv2.png/v1/fill/w_234,h_177,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8c34f9_747a6d773ea942b299dffbfc0c29d022~mv2.png"    alt=""   /> */}
+
+<div className="[&>*]:mx-auto text-center">
+            <Image width={200} height={200} src="https://static.wixstatic.com/media/8c34f9_108886471b3848c5b09701765e990772~mv2.png/v1/crop/x_34,y_84,w_988,h_937/fill/w_417,h_396,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/carte%20logo%20capitals%20transparent%20background.png"
+               className="text-center" alt="carte logo capitals transparent background.png"/>
 
 
-            <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_108886471b3848c5b09701765e990772~mv2.png/v1/crop/x_34,y_84,w_988,h_937/fill/w_417,h_396,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/carte%20logo%20capitals%20transparent%20background.png"
-                alt="carte logo capitals transparent background.png"/>
-
-
-            <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_a2ce68151fdd454dbf758c5ccca08294~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8c34f9_a2ce68151fdd454dbf758c5ccca08294~mv2.png"    alt=""   />
-
+           
             <h2 id="who-we-are">Who We Are</h2>
+            <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_a2ce68151fdd454dbf758c5ccca08294~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8c34f9_a2ce68151fdd454dbf758c5ccca08294~mv2.png"    alt=""   />
 
             <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_9654bd5283d44f07afd05ca08077c454~mv2.png/v1/fill/w_164,h_163,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8c34f9_9654bd5283d44f07afd05ca08077c454~mv2.png"    alt=""   />
 
@@ -133,16 +133,19 @@ export default function Home() {
             />
 
             Meet...
-
-            <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_15a0a19614ba4f6888049a583f4f0ed8~mv2.jpg/v1/crop/x_645,y_0,w_3480,h_4640/fill/w_286,h_381,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image width={100} height={200}_6197.jpg"
-                alt="Image width={100} height={200}_6197.jpg"
+<div className="grid grid-cols-2">
+<Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_15a0a19614ba4f6888049a583f4f0ed8~mv2.jpg/v1/crop/x_645,y_0,w_3480,h_4640/fill/w_286,h_381,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image width={100} height={200}_6197.jpg"
+                alt="_6197.jpg"className="w-full"
+              
             />
 
 
             <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_eb704553562b463c94b10b1c86ef4f80~mv2.jpg/v1/crop/x_1794,y_0,w_3372,h_4640/fill/w_537,h_739,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Image width={100} height={200}_6179.jpg"
-                alt="Image width={100} height={200}_6179.jpg"
+                alt="_6179.jpg" className="w-full"
             />
-
+</div>
+   
+</div>
             <Footer></Footer>
         </>
     )
