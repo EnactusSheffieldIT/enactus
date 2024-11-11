@@ -12,7 +12,7 @@ export default function Home() {
             <h2 className="text-3xl">Teaching Vital Skills</h2>
             <br></br>
             <p>CodeCreators is a project designed to teach vital programming skills to its students.</p>
-            <p>Whether you have experience in python and want a refresher on the basics, or you're a complete beginner, this course is for you.</p>
+            <p>Whether you have experience in python and want a refresher on the basics, or you&apos;re a complete beginner, this course is for you.</p>
         </div>
         <br></br><br></br><br></br>
         <div className = "text-center">
@@ -37,18 +37,18 @@ export default function Home() {
         <div className = "text-center">
             <h2 className="text-3xl">Whats in it for you?</h2>
             <br></br>
-            <p>At the end of the 8 weeks, you'll recieve a certificate from us for completing this course.</p>
+            <p>At the end of the 8 weeks, you&apos;ll recieve a certificate from us for completing this course.</p>
             <p>You can use this certificate to show off your learnt skills on your CV/Resume.</p>
-            <p>And of course, you'll also learn key programming skills that can be applied to any modern job role.</p>
-            <p>An added benefit of learning python is that its concepts are very fundamental, so you'll have a huge advantage in learning other programming languages such as Java or C++.</p>
+            <p>And of course, you&apos;ll also learn key programming skills that can be applied to any modern job role.</p>
+            <p>An added benefit of learning python is that its concepts are very fundamental, so you&apos;ll have a huge advantage in learning other programming languages such as Java or C++.</p>
         </div>
         <br></br><br></br><br></br>
         <div className = "text-center">
             <h2 className="text-3xl">Interested in Applying?</h2>
             <br></br>
-            <p>If you're interested in applying for the 2025 programme, thats great!</p>
+            <p>If you&apos;re interested in applying for the 2025 programme, thats great!</p>
             <p>Please fill in the form below to register your interest</p>
-            <p>We'll get back to you with information on how to pay:</p>
+            <p>We&apos;ll get back to you with information on how to pay:</p>
             <h1 className="text-9xl">FORM PLACEHOLDER</h1>
         </div>
         <br></br><br></br><br></br>
@@ -64,10 +64,10 @@ export default function Home() {
         <div className = "text-center">
             <h2 className="text-3xl">Interested in Joining the Team?</h2>
             <br></br>
-            <p>If you're interested in joining the CodeCreators team, you'd be more than welcome.</p>
+            <p>If you&apos;re interested in joining the CodeCreators team, you&apos;d be more than welcome.</p>
             <p>CodeCreators is a project taught by students for students.</p>
-            <p>The only thing we ask from you is that you have skills in python that are sharp enough to teach others. It doesn't matter what year of study you're in.</p>
-            <p>If you're interested, please (TBD what to do, idk yet)</p>
+            <p>The only thing we ask from you is that you have skills in python that are sharp enough to teach others. It doesn&apos;t matter what year of study you&apos;re in.</p>
+            <p>If you&apos;re interested, please (TBD what to do, idk yet)</p>
         </div>
         <Footer></Footer>
         </>
