@@ -1,13 +1,15 @@
 import Head from "../../components/header"
 import Footer from "../../components/footer"
+import OTheader from "../otheader"
 import Image from 'next/image'
 export default function Home() {
     return (
         <>
             <Head></Head>
-            <div >
+            <OTheader></OTheader>
+            <div className="w-[90%] mx-auto max-w-[780px]">
 <div className="flex flex-col justify-center items-center">
-<Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_e089b17d5c3e47a484ea8fa2ecacec2a~mv2.png/v1/fill/w_490,h_564,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8c34f9_e089b17d5c3e47a484ea8fa2ecacec2a~mv2.png" alt="Screenshot 2022-01-09 at 17.25.56.png" />
+<Image width={500} height={200} src="https://static.wixstatic.com/media/8c34f9_e089b17d5c3e47a484ea8fa2ecacec2a~mv2.png/v1/fill/w_490,h_564,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8c34f9_e089b17d5c3e47a484ea8fa2ecacec2a~mv2.png" alt="Screenshot 2022-01-09 at 17.25.56.png" />
 
 <p><a href="https://67180568-5b0a-4981-bc8e-f022a3e2f1e8.filesusr.com/ugd/8c34f9_c303020053514459aed34d014d77b33e.pdf">READ</a></p>
 <h1 className="text-6xl leading-3 text-orange-600 py-10">Revision Links</h1>

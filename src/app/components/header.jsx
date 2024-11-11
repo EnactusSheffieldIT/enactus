@@ -11,7 +11,7 @@ export default function Home() {
   };
     return (
       <>
-        <header className="flex flex-row justify-evenly items-center bg-black text-white sticky top-0 z-30">
+        <header className="flex flex-row justify-evenly items-center bg-black text-white sticky top-0 z-30 whitetoyellow">
           <Link href="/" className="flex flex-col md:my-5 mt-2">
           <Image
           // layout="responsive"
@@ -41,7 +41,7 @@ export default function Home() {
               {t("contact")}
             </Link> */}
           </div>
-          <div className="menulink  mt-5 hidden md:inline">
+          <div className="menulink  mt-5 hidden md:inline  [&>*]:transition-all">
   
             <Link href="/" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Home</Link>
             <Link href="/#about" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">About</Link>
@@ -83,7 +83,7 @@ export default function Home() {
          
         </header>
      
-         <div className="pt-3 sticky top-[60px] md:hidden bg-gray-950 text-white z-20">
+         <div className="pt-3 sticky top-[60px] md:hidden !bg-gray-950 !text-white z-20">
           {isClick && (
             <>
               <div className="block ">
@@ -92,7 +92,7 @@ export default function Home() {
             <Link href="/#" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Home</Link>
             <Link href="/#about" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">About</Link>
             
-              <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn">Team</Link>
+              <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
                 <Link className="ml-5 p-2" href="/codecreators/#">CodeCreators</Link>
                 <Link className="ml-5 p-2" href="/ontarget/#">OnTarget</Link>
                 <Link className="ml-5 p-2" href="/vapedrop">VapeDrop</Link>

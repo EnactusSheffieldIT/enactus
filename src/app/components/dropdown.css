@@ -17,25 +17,45 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #010101;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 100;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    transition: 0.2s all;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: #ddd; color: black;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .whitetoyellow:hover{
+    & > a:hover{
+      filter: invert(0%) sepia() saturate(10000%) hue-rotate(342deg) brightness() contrast()
+
+    }
+    & > *>a:hover{
+      filter: invert(0%) sepia() saturate(10000%) hue-rotate(342deg) brightness() contrast()
+
+    }
+    & > *>*>*>a:hover > svg{
+      filter: invert(50%) sepia(50%) saturate(10000%) hue-rotate(209deg) brightness(80%) contrast();
+      transition: 0.4s all;
+
+    }
+  }
+  .logotoyellow > a:hover{
+    filter: invert(50%) sepia(50%) saturate(10000%) hue-rotate(209deg) brightness(80%) contrast();
+    transition: 0.4s all;
+  }
