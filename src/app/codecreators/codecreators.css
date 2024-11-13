@@ -1,4 +1,4 @@
-#weeks {
+#bold {
     font-weight: bold;
 }
 
@@ -8,7 +8,15 @@
 }
 
 #team p{
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
 }
+
+#teamImage {
+    display: flex;
+    justify-content: center;
+    padding-right: 8%; 
+    padding-left: 8%;
+}
+

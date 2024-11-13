@@ -1,5 +1,6 @@
 import Head from "../components/header"
 import Footer from "../components/footer"
+import Image from "next/image";
 import "./codecreators.css"
 export default function Home() {
     return (
@@ -19,23 +20,23 @@ export default function Home() {
             <h2 className="text-3xl">Course Layout</h2>
             <br></br>
             <p>The CodeCreators course is a weekly programme with each week following specific core functionality of python.</p>
-            <p>It will begin on the (DATE), running on (DAY) at (TIME) for (HOW LONG) and is an 8 week course.</p>
+            <p>It will begin on the (DATE), running on Wednesday from 2pm-3:30pm and is an 8 week course.</p>
             <p>Each week is listed as follows:</p>
             <br></br>
-            <div id="weeks">
-                <p>Week 1:</p>
-                <p>Week 2:</p>
-                <p>Week 3:</p>
-                <p>Week 4:</p>
-                <p>Week 5:</p>
-                <p>Week 6:</p>
+            <div id="bold">
+                <p>Week 1: Introduction - Variables, Data Types, Inputs, Basic Statements and Arithmetic</p>
+                <p>Week 2: Conditional Programming - If Statements, Switch Case</p>
+                <p>Week 3: Loops - For, While and Do loops</p>
+                <p>Week 4: Arrays, Lists and Tuples - Basics and Methods</p>
+                <p>Week 5: Functions and Procedures</p>
+                <p>Week 6: Libraries and Modules - Built into python</p>
                 <p>Week 7: NumPy, the basics and uses</p>
-                <p>Week 8: MatPlotLib, The basics and uses</p>
+                <p>Week 8: MatPlotLib, the basics and uses</p>
             </div>
         </div>
         <br></br><br></br><br></br>
         <div className = "text-center">
-            <h2 className="text-3xl">Whats in it for you?</h2>
+            <h2 className="text-3xl">What&apos;s in it for you?</h2>
             <br></br>
             <p>At the end of the 8 weeks, you&apos;ll recieve a certificate from us for completing this course.</p>
             <p>You can use this certificate to show off your learnt skills on your CV/Resume.</p>
@@ -46,7 +47,10 @@ export default function Home() {
         <div className = "text-center">
             <h2 className="text-3xl">Interested in Applying?</h2>
             <br></br>
-            <p>If you&apos;re interested in applying for the 2025 programme, thats great!</p>
+            <p>If you&apos;re interested in applying for the 2025 programme, we look forward to teaching you. The total cost for this course is £25pp.</p>
+            <div id="bold">
+                <p>SPECIAL OFFER: If you apply to CodeCreators with a friend, you each get £5 off, making the entire course £20 each!</p>
+            </div>
             <p>Please fill in the form below to register your interest</p>
             <p>We&apos;ll get back to you with information on how to pay:</p>
             <h1 className="text-9xl">FORM PLACEHOLDER</h1>
@@ -54,10 +58,19 @@ export default function Home() {
         <br></br><br></br><br></br>
         <div className = "text-center">
             <h2 className="text-3xl">Meet the Team</h2>
-            <div id = "team">
-                <p>Niall<br></br>(Project Leader)</p>
-                <p>Oli<br></br>(Mentor)</p>
-                <p>Ian<br></br>(Mentor)</p>
+            <div id = "teamImage" className=" gap-x-5 flex flex-row">
+                <div className="flex flex-col">
+                    <Image src="/files/codecreators/niall.jpg" width={150} height={175} alt="Niall" className="h-[180px]"></Image>
+                    <p>Niall<br></br>(Project Leader)</p>
+                </div>
+                <div className="flex flex-col">
+                    <Image src="/files/codecreators/oli.jpg" width={150} height={175} alt="Niall" className="h-[180px]"></Image>
+                    <p>Oli<br></br>(Mentor)</p>
+                </div>
+                <div className="flex flex-col">
+                    <Image src="/files/codecreators/ian.jpg" width={150} height={175} alt="Niall" className="h-[180px]"></Image>
+                    <p>Ian<br></br>(Mentor)</p>
+                </div>
             </div>
             <br></br>
         </div>
