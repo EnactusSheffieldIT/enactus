@@ -1,15 +1,55 @@
 "use client"
 
 import { usePathname } from 'next/navigation'
-
+import { useState, useRef } from 'react';
 import "./dropdown.css";
 export default function Footer() {
+  const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  
+  const formRef = useRef<HTMLFormElement>(null);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+
+    e.preventDefault();
+    setError(null);
+    setIsLoading(true);
+
+    if (!formRef.current) {
+      setIsLoading(false);return; }
+    
+      const formData = new FormData(formRef.current);
+  const token = formData.get("entry.156039453");
+  const email = formData.get("entry.1074342250");
+  const name = formData.get("entry.1396483511");
+  const message1 = formData.get("entry.828181153");
+  const subscribe = formData.get("entry.725092952");
+
+
+  try {
+    const response = await fetch("/api/handler", {
+      method: "POST",
+      body: JSON.stringify({ token, email, name, message1, subscribe }),
+    });
+    try {
+      const response = await fetch("https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse", {
+        method: "POST",
+        body: JSON.stringify({ "entry.156039453":token, "entry.1074342250":email, "entry.1396483511":name, "entry.828181153":message1, "entry.725092952":subscribe }),
+      });
+    } catch (err) {
+      console.log("An error occurred. Please try again.");
+    }
+  } catch (err) {
+    console.log("An error occurred. Please try again.");
+  }
+
+  }
   const pathname = usePathname()
+
   return (
     <footer className="overflow-hidden">
       <div className="ourcontactcontainer mt-32">
         <h1 className="w-full text-center text-5xl font-semibold mb-14">Contact US</h1>
-        <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse" className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
+        <form ref={formRef} onSubmit={handleSubmit}className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
           <label className="ml-3 -mb-2 mt-3" htmlFor="name">Name</label>
           <input className="border-b-2 border-black bg-transparent" type="text" name="entry.1396483511" placeholder="Beth" required/>
           <label className="ml-3 -mb-2 mt-3"  htmlFor="email ">Email</label>
@@ -21,7 +61,7 @@ export default function Footer() {
         </form>
         <div className="bg-black text-white pb-10 pt-12">
           <h1 className="w-full text-center text-4xl font-semibold mb-10 bg-">Subscribe to our Newsletter</h1>
-          <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse" className="flex flex-row flex-wrap  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
+          <form  ref={formRef} onSubmit={handleSubmit}className="flex flex-row flex-wrap  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
             <label htmlFor="email ">Email</label>
             <input type="text" name="entry.1074342250" placeholder="subscribe@sheffield.ac.uk  " className=" border-2" required/>
             <input hidden name="entry.156039453" defaultValue={pathname}/>
