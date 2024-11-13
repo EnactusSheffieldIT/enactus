@@ -1,25 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import Nodemailer from "nodemailer";
-interface CloudflareTurnstileResponse {
-  success: boolean;
-  "error-codes": string[];
-  challenge_ts: string;
-  hostname: string;
-}
+
 
 export async function POST(req: NextRequest) {
   const { token, email, name, message1, subscribe } = await req.json();
 
-  const turnstileRequest = await fetch(
-    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-    {
-      method: "POST",
-      body: `secret=${encodeURIComponent(process.env.TURNSTILE_SECRET_KEY!)}&response=${encodeURIComponent(token)}`,
-      headers: {
-        "content-type": "application/x-www-form-urlencoded",
-      },
-    }
-  );
+
 
   const transporter = Nodemailer.createTransport({
     service: 'gmail',

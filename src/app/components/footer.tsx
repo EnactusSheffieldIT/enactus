@@ -49,7 +49,7 @@ export default function Footer() {
     <footer className="overflow-hidden">
       <div className="ourcontactcontainer mt-32">
         <h1 className="w-full text-center text-5xl font-semibold mb-14">Contact US</h1>
-        <form ref={formRef} onSubmit={handleSubmit}className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
+        <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
           <label className="ml-3 -mb-2 mt-3" htmlFor="name">Name</label>
           <input className="border-b-2 border-black bg-transparent" type="text" name="entry.1396483511" placeholder="Beth" required/>
           <label className="ml-3 -mb-2 mt-3"  htmlFor="email ">Email</label>
@@ -61,7 +61,7 @@ export default function Footer() {
         </form>
         <div className="bg-black text-white pb-10 pt-12">
           <h1 className="w-full text-center text-4xl font-semibold mb-10 bg-">Subscribe to our Newsletter</h1>
-          <form  ref={formRef} onSubmit={handleSubmit}className="flex flex-row flex-wrap  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
+          <form  ref={formRef} onSubmit={handleSubmit} className="flex flex-row flex-wrap  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
             <label htmlFor="email ">Email</label>
             <input type="text" name="entry.1074342250" placeholder="subscribe@sheffield.ac.uk  " className=" border-2" required/>
             <input hidden name="entry.156039453" defaultValue={pathname}/>
