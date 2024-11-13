@@ -1,70 +1,55 @@
 "use client"
 
 import { usePathname } from 'next/navigation'
-import { useState, useRef } from 'react';
+import React, { useState, FormEvent, useRef, useEffect } from 'react'
 import "./dropdown.css";
+import './loader.js';
 export default function Footer() {
-  const [error, setError] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  
-  const formRef = useRef<HTMLFormElement>(null);
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-
-    e.preventDefault();
-    setError(null);
-    setIsLoading(true);
-
-    if (!formRef.current) {
-      setIsLoading(false);return; }
-    
-      const formData = new FormData(formRef.current);
-  const token = formData.get("entry.156039453");
-  const email = formData.get("entry.1074342250");
-  const name = formData.get("entry.1396483511");
-  const message1 = formData.get("entry.828181153");
-  const subscribe = formData.get("entry.725092952");
+  const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [error, setError] = useState<string | null>(null)
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    // event.preventDefault()
+    setIsLoading(true)
+    setError(null) // Clear previous errors when a new request starts
 
 
-  try {
-    const response = await fetch("/api/handler", {
+    const formData = new FormData(event.currentTarget as HTMLFormElement);
+    const token = formData.get("entry.156039453");
+    const email = formData.get("entry.1074342250");
+    const name = formData.get("entry.1396483511");
+    const message1 = formData.get("entry.828181153");
+    const subscribe = formData.get("entry.725092952");
+    await fetch("/api/handler", {
       method: "POST",
       body: JSON.stringify({ token, email, name, message1, subscribe }),
     });
-    try {
-      const response = await fetch("https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse", {
-        method: "POST",
-        body: JSON.stringify({ "entry.156039453":token, "entry.1074342250":email, "entry.1396483511":name, "entry.828181153":message1, "entry.725092952":subscribe }),
-      });
-    } catch (err) {
-      console.log("An error occurred. Please try again.");
-    }
-  } catch (err) {
-    console.log("An error occurred. Please try again.");
-  }
+    console.log(JSON.stringify(Object.fromEntries(new FormData(event.target as HTMLFormElement).entries())))
 
   }
+
+  const formRef = useRef<HTMLFormElement>(null);
   const pathname = usePathname()
-
+  // 
   return (
     <footer className="overflow-hidden">
       <div className="ourcontactcontainer mt-32">
         <h1 className="w-full text-center text-5xl font-semibold mb-14">Contact US</h1>
-        <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
+        <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse" ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
           <label className="ml-3 -mb-2 mt-3" htmlFor="name">Name</label>
-          <input className="border-b-2 border-black bg-transparent" type="text" name="entry.1396483511" placeholder="Beth" required/>
-          <label className="ml-3 -mb-2 mt-3"  htmlFor="email ">Email</label>
-          <input className="border-b-2 border-black bg-transparent" type="email" name="entry.1074342250" placeholder="contact@enactussheffield.org" required/>
+          <input className="border-b-2 border-black bg-transparent" type="text" name="entry.1396483511" placeholder="Beth" required />
+          <label className="ml-3 -mb-2 mt-3" htmlFor="email ">Email</label>
+          <input className="border-b-2 border-black bg-transparent" type="email" name="entry.1074342250" placeholder="contact@enactussheffield.org" required />
           <label className="ml-3" htmlFor="message">Message</label>
           <textarea name="entry.828181153" id="" className="h-[100px] border-2"></textarea>
           <input type="submit" value="send" className="hover:cursor-pointer bg-blue-600 text-white mt-7 hover:bg-yellow-500 hover:border-transparent" />
-          <input hidden name="entry.156039453" defaultValue={pathname}/>
+          <input hidden name="entry.156039453" defaultValue={pathname} />
         </form>
         <div className="bg-black text-white pb-10 pt-12">
           <h1 className="w-full text-center text-4xl font-semibold mb-10 bg-">Subscribe to our Newsletter</h1>
-          <form  ref={formRef} onSubmit={handleSubmit} className="flex flex-row flex-wrap  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
+          <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse" ref={formRef} onSubmit={handleSubmit} className="flex flex-row flex-wrap  w-[90%] md:w-[600px] mx-auto gap-x-4 justify-center items-center">
             <label htmlFor="email ">Email</label>
-            <input type="text" name="entry.1074342250" placeholder="subscribe@sheffield.ac.uk  " className=" border-2" required/>
-            <input hidden name="entry.156039453" defaultValue={pathname}/>
+            <input type="text" name="entry.1074342250" placeholder="subscribe@sheffield.ac.uk  " className=" border-2" required />
+            <input hidden name="entry.156039453" defaultValue={pathname} />
             <input hidden name='entry.725092952' defaultValue={"true"} />
             <input type="submit" value="send" className="hover:cursor-pointer p-1 rounded bg-blue-600 text-white hover:bg-yellow-500 hover:border-transparent block px-3" />
           </form>
@@ -126,3 +111,10 @@ export default function Footer() {
     </footer>
   );
 }
+// $.ajax({
+//   url: "https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse", // pathname, subscribe,name
+//   data: JSON.stringify(Object.fromEntries(new FormData(event.target as HTMLFormElement).entries())),
+//   type: "POST",
+//   dataType: "xml",
+//   statusCode: { 200: function() { } }
+// });
