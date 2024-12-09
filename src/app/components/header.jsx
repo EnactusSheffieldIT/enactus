@@ -3,15 +3,16 @@ import Image from "next/image";
 import "./dropdown.css";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 export default function Home() {
   const [isClick, isSetClick] = useState(false);
-
+  const pathname = usePathname()
   const toggleNavbar = () => {
     isSetClick(!isClick);
   };
     return (
       <>
-        <header className="flex flex-row justify-evenly items-center bg-black text-white sticky top-0 z-30 whitetoyellow">
+        <header className={`flex flex-row justify-evenly items-center bg-transparent text-white top-0 z-30 whitetoyellow absolute w-[100%] ${isClick == true || pathname != "/"?"!bg-black": ""}  ${pathname != "/"?"!relative": ""}`}>
           <Link href="/" className="flex flex-col md:my-5 mt-2">
           <Image
           // layout="responsive"
@@ -83,10 +84,11 @@ export default function Home() {
          
         </header>
      
-         <div className="pt-3 sticky top-[60px] md:hidden !bg-gray-950 !text-white z-20">
+         <div className={`  md:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
+         
           {isClick && (
             <>
-              <div className="block ">
+              <div className="block !bg-gray-950 pt-3"> {/* fixing white gap  */}
                  <div className="menulink  mt-5 [&>*]:block" >
   
             <Link href="/#" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Home</Link>

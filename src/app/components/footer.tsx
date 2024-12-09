@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="overflow-hidden">
       <div className="ourcontactcontainer mt-32">
-        <h1 className="w-full text-center text-5xl font-semibold mb-14">Contact US</h1>
+        <h1 className="w-full text-center text-5xl font-semibold mb-14">Any Enquiry?</h1>
         <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdv9uVdvzgAM6tgta_mNhfJdxoV2lCD_dELjtDCABY28iHyWw/formResponse" ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
           <label className="ml-3 -mb-2 mt-3" htmlFor="name">Name</label>
           <input className="border-b-2 border-black bg-transparent" type="text" name="entry.1396483511" placeholder="Beth" required />
@@ -41,7 +41,7 @@ export default function Footer() {
           <input className="border-b-2 border-black bg-transparent" type="email" name="entry.1074342250" placeholder="contact@enactussheffield.org" required />
           <label className="ml-3" htmlFor="message">Message</label>
           <textarea name="entry.828181153" id="" className="h-[100px] border-2"></textarea>
-          <input type="submit" value="send" className="hover:cursor-pointer bg-blue-600 text-white mt-7 hover:bg-yellow-500 hover:border-transparent" />
+          <input type="submit" value="Contact us" className="hover:cursor-pointer bg-blue-600 text-white mt-7 hover:bg-yellow-500 hover:border-transparent" />
           <input hidden name="entry.156039453" defaultValue={pathname} />
         </form>
         <div className="bg-black text-white pb-10 pt-12">
@@ -51,7 +51,7 @@ export default function Footer() {
             <input type="text" name="entry.1074342250" placeholder="subscribe@sheffield.ac.uk  " className=" border-2" required />
             <input hidden name="entry.156039453" defaultValue={pathname} />
             <input hidden name='entry.725092952' defaultValue={"true"} />
-            <input type="submit" value="send" className="hover:cursor-pointer p-1 rounded bg-blue-600 text-white hover:bg-yellow-500 hover:border-transparent block px-3" />
+            <input type="submit" value="Follow" className="hover:cursor-pointer p-1 rounded bg-blue-600 text-white hover:bg-yellow-500 hover:border-transparent block px-3" />
           </form>
         </div>
 
