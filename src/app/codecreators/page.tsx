@@ -20,7 +20,7 @@ export default function Home() {
             <h2 className="text-3xl">Course Layout</h2>
             <br></br>
             <p>The CodeCreators course is a weekly programme with each week following specific core functionality of python.</p>
-            <p>It will begin on the (DATE), running on Wednesday from 2pm-3:30pm and is an 8 week course.</p>
+            <p>It will begin on the 26th of February, running on Wednesday from 2pm-3:30pm and is an 8 week course.</p>
             <p>Each week is listed as follows:</p>
             <br></br>
             <div id="bold">
@@ -51,9 +51,9 @@ export default function Home() {
             <div id="bold">
                 <p>SPECIAL OFFER: If you apply to CodeCreators with a friend, you each get £5 off, making the entire course £20 each!</p>
             </div>
-            <p>Please fill in the form below to register your interest</p>
+            <p>Please fill in the google form below to register your interest</p>
             <p>We&apos;ll get back to you with information on how to pay:</p>
-            <h1 className="text-9xl">FORM PLACEHOLDER</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSffIk6xtrt2l3PDNPSQiJdqi-qFzU6hU5s74HXdBty4vqnBzQ/viewform?usp=sf_link"><b>Click here for the student application form</b></a>
         </div>
         <br></br><br></br><br></br>
         <div className = "text-center">
@@ -80,7 +80,8 @@ export default function Home() {
             <p>If you&apos;re interested in joining the CodeCreators team, you&apos;d be more than welcome.</p>
             <p>CodeCreators is a project taught by students for students.</p>
             <p>The only thing we ask from you is that you have skills in python that are sharp enough to teach others. It doesn&apos;t matter what year of study you&apos;re in.</p>
-            <p>If you&apos;re interested, please (TBD what to do, idk yet)</p>
+            <p>If you&apos;re interested, please fill in the google form below:</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSemATAJYLAYbaPfRcX6AbJecSEwqRwyvpvQCZ0fm6VWUa0XbQ/viewform?usp=sf_link"><b>Click here for the mentor application form</b></a>
         </div>
         <Footer></Footer>
         </>
