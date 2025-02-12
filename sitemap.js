@@ -10,7 +10,7 @@ const addPage = (page) => {
   // ........
 
   return `<url>
-    <loc>${`${process.env.WEBSITE_URL}${pathname}`}</loc>
+    <loc>${`https://enactussheffield.org${pathname}`}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     </url>`;
 };
