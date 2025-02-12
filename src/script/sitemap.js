@@ -26,7 +26,15 @@ const generateSitemap = async () => {
   </urlset>`;
 
   // write sitemap file to public folder - will be available at root url - for example: https://example.com/sitemap.xml
-  fs.writeFileSync('public/sitemap.xml', sitemap);
+  try {
+    // Create public directory if it doesn't exist
+    if (!fs.existsSync('public')) {
+      fs.mkdirSync('public', { recursive: true });
+    }
+    fs.writeFileSync('public/sitemap.xml', sitemap);
+  } catch (error) {
+    console.error('Error writing sitemap file:', error);
+  }
 };
 
 // Use async IIFE to handle top-level await

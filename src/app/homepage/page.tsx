@@ -121,7 +121,16 @@ export default function Home() {
                   loop: true,
                   deleteSpeed: 20,
                   delay: 50,
-                  pauseFor: 2500,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString('IMPROVING LIVES AND TRANSFORMING COMMUNITIES')
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString('Where passion meets purpose, and dedication ignites change!')
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .start();
                 }}
               />
             </div>
