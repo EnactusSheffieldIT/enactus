@@ -4,7 +4,8 @@ export default function Home(props) {
 
     return (
         <>
-           <Link href={props.link} className="flex flex-col items-center w-[500px] justify-center">
+           <Link href={props.link} className={`${props.color} flex flex-col items-center  justify-center pb-64 project-card h-screen p-8`}>
+           {/* w-[500px] */}
               <div className="h-[213px] flex justify-end items-center">
                 <Image
                 src={props.image}
