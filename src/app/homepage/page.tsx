@@ -214,7 +214,7 @@ export default function Home() {
           <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
             <Image src="/main/EnactusUniversityClipart.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
             <p>Enactus Sheffield is one of over 1,700 Enactus teams around the world, all working on developing social impact projects.
-              Student-led social enterprise, which sits within the University's Partnerships and Regional Engagement department</p>
+              Student-led social enterprise, which sits within the University&apos;s Partnerships and Regional Engagement department</p>
           </div>
           <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
             <Image
