@@ -2,12 +2,19 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  webpack: (config, { isServer }) => {
+  webpack: async (config, { isServer }) => {
     if (isServer) {
-      require('./src/script/sitemap.js');
+      await import('./src/script/sitemap.js');
     }
-
     return config;
+  },
+  // Add Turbopack configuration
+  experimental: {
+    turbo: {
+      rules: {
+        // Add any custom Turbopack rules here if needed
+      },
+    },
   },
   reactStrictMode: true,
   images: {

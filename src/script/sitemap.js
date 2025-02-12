@@ -1,6 +1,5 @@
-
-const fs = require('fs');
-const globby = require('globby');
+import fs from 'fs';
+import { globby } from 'globby';
 
 const addPage = (page) => {
   // remove unneeded segments of the page file path - for example: 'src/app/home/page.tsx' becomes '/home'
@@ -21,12 +20,16 @@ const generateSitemap = async () => {
   const pages = await globby(['src/app/**/page.tsx']);
 
   // generate sitemap XML
-  const sitemap = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${pages.map(addPage).join('\n')}
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${pages.map(addPage).join('\n')}
   </urlset>`;
 
   // write sitemap file to public folder - will be available at root url - for example: https://example.com/sitemap.xml
   fs.writeFileSync('public/sitemap.xml', sitemap);
 };
 
-generateSitemap();
+// Use async IIFE to handle top-level await
+(async () => {
+  await generateSitemap();
+})();
