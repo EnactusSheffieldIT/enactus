@@ -23,7 +23,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-semibold">What is CodeCreators?</h2>
           <p className="text-lg text-gray-700">
             CodeCreators is a project designed to teach vital programming skills to students of all levels—whether
-            you're a beginner or seeking a refresher.
+            you&#39;re a beginner or seeking a refresher.
           </p>
           <p className="text-lg text-gray-700">
             Our 8-week Python course will equip you with the fundamentals of programming, helping you gain confidence
@@ -106,7 +106,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-semibold text-center">Meet the Team</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-8">
             <div className="text-center">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src="/files/codecreators/niall.jpg"
                 alt="Niall"
                 className="w-32 h-32 rounded-full object-cover mx-auto"
@@ -115,7 +117,9 @@ export default function Home() {
               <p className="text-gray-600">Project Leader</p>
             </div>
             <div className="text-center">
-              <img
+            <Image
+                width={100}
+                height={100}
                 src="/files/codecreators/oli.jpg"
                 alt="Oli"
                 className="w-32 h-32 rounded-full object-cover mx-auto"
@@ -124,7 +128,9 @@ export default function Home() {
               <p className="text-gray-600">Mentor</p>
             </div>
             <div className="text-center">
-              <img
+            <Image
+                width={100}
+                height={100}
                 src="/files/codecreators/ian.jpg"
                 alt="Ian"
                 className="w-32 h-32 rounded-full object-cover mx-auto"

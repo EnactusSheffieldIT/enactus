@@ -39,7 +39,7 @@ export default function Home() {
       {/* Tagline Section */}
       <section className="bg-blue-100 shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12 text-center">
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Tagline</h2>
-        <p className="text-lg text-gray-700 italic">"Empowering connections, one platform at a time."</p>
+        <p className="text-lg text-gray-700 italic">&#34;Empowering connections, one platform at a time.&#34;</p>
       </section>
 
       {/* Contact Section */}

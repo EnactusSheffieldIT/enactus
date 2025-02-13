@@ -1,5 +1,6 @@
 import Head from "../components/header"
 import Footer from "../components/footer"
+import Image from "next/image";
 export default function Home() {
     return (
         <>  
@@ -24,7 +25,9 @@ export default function Home() {
               a positive impact on the environment and public health.
             </p>
           </div>
-          <img
+          <Image
+            width={500}
+            height={500}
             src="https://via.placeholder.com/500" // Replace with actual image URL
             alt="VapeDrop Initiative"
             className="rounded-lg shadow-lg"

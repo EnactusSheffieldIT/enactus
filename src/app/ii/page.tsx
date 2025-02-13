@@ -128,7 +128,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-3xl font-extrabold mb-6">Make a Difference Today</h3>
           <p className="text-lg text-gray-700 mb-8">
-            Join us in bridging language barriers and empowering communities. Whether you're a student looking for practical experience or a community leader seeking support for those in need, our service is here to help.
+            Join us in bridging language barriers and empowering communities. Whether you&#39;re a student looking for practical experience or a community leader seeking support for those in need, our service is here to help.
           </p>
           <a
             href="mailto:Sabbasi4@Sheffield.ac.uk"
