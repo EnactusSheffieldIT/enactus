@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   })
   try {
     await transporter.sendMail({
-      from: '"Hello"<hheylau@gmail.com>', // sender address
+      from: `"Hello"<${email}>`, // sender address
       to: `${email}`, // list of receivers
       subject: `Message from enactus`, // Subject line
       text: `Thank you for contacting us. We will contact you within 48 hours \n your detail with us:${email}, ${name}, ${message1}`, // plain text body
