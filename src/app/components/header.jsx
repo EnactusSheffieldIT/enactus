@@ -52,8 +52,6 @@ export default function Home() {
               <Image src="/main/hamburger.svg" width={25} height={25} alt="menu" className="inline ml-2"></Image></Link>
               <div className="dropdown-content bg-gray-800 text-white">
                 <Link href="/codecreators">CodeCreators</Link>
-                <Link href="/ontarget">OnTarget</Link>
-                <Link href="/vapedrop">VapeDrop</Link>
                 <Link href="/carte">Carte</Link>
                 <Link href="/ii">Intellect interpreters</Link>
                 <Link href="/emarketing">E-marketing</Link>
@@ -96,8 +94,6 @@ export default function Home() {
             
               <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
                 <Link className="ml-5 p-2" href="/codecreators/#">CodeCreators</Link>
-                <Link className="ml-5 p-2" href="/ontarget/#">OnTarget</Link>
-                <Link className="ml-5 p-2" href="/vapedrop">VapeDrop</Link>
                 <Link className="ml-5 p-2" href="/carte/#">Carte</Link>
                 <Link className="ml-5 p-2" href="/ii/#">Intellect interpreters</Link>
                 <Link className="ml-5 p-2" href="/emarketing/#">E-marketing</Link>
