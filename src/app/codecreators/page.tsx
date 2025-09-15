@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero Section */}
       <header className="text-center py-16 bg-white shadow-sm">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-600">Welcome to CodeCreators Test Test</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-blue-600">Welcome to CodeCreators</h1>
           <p className="mt-4 text-lg md:text-xl text-gray-600">
             Teaching Vital Programming Skills to Empower Your Future
           </p>

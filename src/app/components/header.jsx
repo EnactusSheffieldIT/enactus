@@ -59,7 +59,7 @@ export default function Home() {
                 <Link href="/emarketing">E-marketing</Link>
               </div>
             </div>
-            <Link href="/apply" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Apply Now</Link>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Apply Now</Link>
             <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Contact</Link>
           </div>
           <div className="searchbox inline">
@@ -101,7 +101,7 @@ export default function Home() {
                 <Link className="ml-5 p-2" href="/carte/#">Carte</Link>
                 <Link className="ml-5 p-2" href="/ii/#">Intellect interpreters</Link>
                 <Link className="ml-5 p-2" href="/emarketing/#">E-marketing</Link>
-            <Link href="/apply" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Apply Now</Link>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Apply Now</Link>
             <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Contact</Link>
           </div>
                 </div>
