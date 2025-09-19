@@ -173,7 +173,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
                 <h1>BLADES AND BRANDS</h1>
               </div>
-              <p className="pb-5" >Blades and Brands is Enactus Sheffield's talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university.</p>
+              <p className="pb-5" >Blades and Brands is Enactus Sheffield&apos;s talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university.</p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
@@ -216,7 +216,7 @@ export default function Home() {
             <div className="timeline-item flex items-center mb-20">
               <div className="w-[45%] text-right pr-8">
                 <div className="text-3xl font-bold">2024</div>
-                <p>In 2024 we got in the top 20 in the nationals competition hosted in London, and are looking forward to next year's.</p>
+                <p>In 2024 we got in the top 20 in the nationals competition hosted in London, and are looking forward to next year&apos;s.</p>
               </div>   <div className="timeline-dot w-4 h-4 bg-yellow-500 rounded-full z-10"></div>
               <div className="w-[45%] pl-8">
                 <Image

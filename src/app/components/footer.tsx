@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 
 import { usePathname } from 'next/navigation'
 import React, { useState, FormEvent, useRef, useEffect } from 'react'
@@ -112,10 +113,34 @@ export default function Footer() {
         </div>
         <div className="my-7">&copy; Enactus Sheffield Limited {new Date().getFullYear()}. All rights reserved.</div>
         <div className="flex flex-wrap gap-4 mt-4 md:mt-0 justify-center">
-          <img src="/files/footer/Black_Badge_PolicyBee.png" width={60} height={60} alt="icon1" />
-          <img src="/files/footer/emerge.png" width={60} height={60} alt="icon2" />
-          <img src="/files/footer/university-of-sheffield-seeklogo.png" width={198} height={60} alt="icon3" />
-          <img src="/files/footer/enactus.png" width={100} height={60} alt="icon4" />
+
+          <Image
+            src="/files/footer/Black_Badge_PolicyBee.png"
+            width={60}
+            height={60}
+            alt="idk"
+          />
+
+          <Image
+            src="/files/footer/emerge.png"
+            width={60}
+            height={60}
+            alt="Emerge"
+          />
+
+          <Image
+            src="/files/footer/university-of-sheffield-seeklogo.png"
+            width={198}
+            height={60}
+            alt="University of Sheffield"
+          />
+
+          <Image
+            src="/files/footer/enactus.png"
+            width={100}
+            height={60}
+            alt="Enactus UK"
+          />
         </div>
         <br></br>
       </div>
