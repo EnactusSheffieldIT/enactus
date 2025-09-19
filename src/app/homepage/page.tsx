@@ -107,8 +107,8 @@ export default function Home() {
     <main className="text-black overflow-hidden">
       {/* bg-yellow-50  */}
       <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover min-h-[100vh] md:h-[700px] relative flex justify-center items-center">
-        <div className="containerhero w-full bg-black/70 min-h-[100vh] md:h-[700px] h-full flex flex-col items-center p-5 md:p-0 relative justify-start ">
-          <h1 className="text-5xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%] mt-12 lg:mt-64 hero-introduction uppercase">
+        <div className="containerhero w-full bg-black/70 min-h-[100vh] md:h-[600px] h-full flex flex-col items-center p-5 md:p-0 relative justify-start ">
+          <h1 className="text-5xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%] mt-12 lg:mt-64 hero-introduction uppercase md:p-10">
             Enactus Sheffield:{" "}
             <br />
             <div className="inline">
@@ -133,8 +133,6 @@ export default function Home() {
               />
             </div>
           </h1>
-
-
         </div>
 
         {/* Add the wave divider and partner section */}
@@ -184,31 +182,20 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div
-        className="ourprojectcontainer h-screen bg-yellow-400/90"
-      >
+      <div className="ourprojectcontainer bg-yellow-400/90">
         <div className="h-screen flex flex-col justify-center items-center">
-
           <div className="flex flex-row w-full h-full">
             <div ref={leftProjectRef} className="w-1/2 items-center justify-center hidden md:flex">
               <div className="theprojectcardlogo">
-                <h1 className="text-center text-2xl font-semibold pb-10">Our projects</h1>
-                {/* mb-14 */}
-                {/* <Image
-                  src="/main/logo.png"
-                  alt="Enactus Logo"
-                  width={400}
-                  height={400}
-                  className=""
-                /> */}
+                <h1 className="text-center text-2xl font-semibold pb-10 pt-[20vh]">Our projects</h1>
                 <div className="flex flex-col items-center">
                   <div className="flex flex-row">
-                    <Image width={100} height={100} className="block mix-blend-multiply" src={"/files/all logos/Code Creators.png"} alt="project logo"></Image>
-                    <Image width={100} height={100} className="block mix-blend-multiply" src={"/main/EMARKETING.png"} alt="project logo"></Image>
+                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/codecreators/cc-logo.png"} alt="project logo"></Image>
+                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/Blades&Brands.png"} alt="project logo"></Image>
                   </div>
                   <div className="flex flex-row">
-                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/intell.jpg"} alt="project logo"></Image>
-                    <Image width={100} height={100} className="block mix-blend-multiply" src={"/files/carte/carte logo capitals transparent background.png"} alt="project logo"></Image>
+                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/intellectinterpreters/intell.png"} alt="project logo"></Image>
+                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/carte/carte.png"} alt="project logo"></Image>
                   </div>
                 </div>
               </div>
@@ -222,13 +209,12 @@ export default function Home() {
                 ref={rightContentRef}
                 className="w-full"
               >
-                <p className="flex-col items-center  justify-center pb-64 project-card h-screen p-8  hidden md:flex"></p>
+                <p className="flex-col items-center justify-center project-card pt-[200vh] hidden md:flex"></p>
 
-                <p className="flex-col items-center  justify-center pb-64 project-card h-[50vh] p-8  hidden md:flex"></p>
-                <ProjectCard color="bg-blue-50" link="/codecreators" image="/files/all logos/Code Creators.png" title="CodeCreators" content="Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students. " />
-                <ProjectCard color="bg-yellow-100" link="/emarketing" image="/main/EMARKETING.png" title="E-marketing" content="(Formerly Be Social Flamingo) EMarketing is Enactus Sheffield's talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university. " />
-                <ProjectCard color="bg-red-50" link="/carte" image="/files/carte/carte logo capitals transparent background.png" title="OnTarget" content="Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices. " />
-                <ProjectCard color="bg-blue-50" link="/ii" image="/files/intell.jpg" title="Intellect interpreters" content="Intellect interpreters is a university interpreting service that helps the community with translation services they may require. Our team will be made of students who can speak another language fluently and they will be trained to help people e.g. refugees with filling out forms and making appointments." />
+                <ProjectCard color="bg-blue-50" link="/codecreators" image="/files/codecreators/cc-logo.png" title="CodeCreators" content="Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students. " />
+                <ProjectCard color="bg-yellow-100" link="/blades&brands" image="/files/Blades&Brands.png" title="Blades and Brands" content="Blades and Brands is Enactus Sheffield's talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university. " />
+                <ProjectCard color="bg-red-50" link="/carte" image="/files/carte/carte logo capitals transparent background.png" title="Carte" content="Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices. " />
+                <ProjectCard color="bg-blue-50" link="/ii" image="/files/intellectinterpreters/intell.png" title="Intellect interpreters" content="Intellect interpreters is a university interpreting service that helps the community with translation services they may require. Our team will be made of students who can speak another language fluently and they will be trained to help people e.g. refugees with filling out forms and making appointments." />
               </div>
             </div>
           </div>

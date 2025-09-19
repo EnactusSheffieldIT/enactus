@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header Section */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-blue-600">
-          Enactus E-marketing Team
+          Blades and Brands
         </h1>
         <p className="mt-4 text-lg text-gray-600">
           Empowering small & medium-sized businesses, societies, and associations with affordable social media management services.
@@ -43,15 +43,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-white shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12">
+      {/* <section className="bg-white shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
         <div className="text-gray-600 leading-relaxed">
-          <p>Email: <a href="mailto:info@enactusemarketing.com" className="text-blue-600 underline">emarketing@enactussheffield.org</a></p>
-          <p>Website: <a href="https://www.enactusemarketing.com" className="text-blue-600 underline">www.enactussheffield.org/emarketing</a></p>
-          {/* <p>Facebook: <a href="https://www.facebook.com/enactusemarketing" className="text-blue-600 underline">facebook.com/enactusemarketing</a></p> */}
-          <p>Instagram: <a href="https://www.instagram.com/enactusemarketing" className="text-blue-600 underline">@enactussheffieldemarketing</a></p>
+          <p>Email: <a href="mailto:info@enactusblades&brands.com" className="text-blue-600 underline">blades&brands@enactussheffield.org</a></p>
+          <p>Website: <a href="https://www.enactusblades&brands.com" className="text-blue-600 underline">www.enactussheffield.org/blades&brands</a></p>
+          <p>Instagram: <a href="https://www.instagram.com/enactusblades&brands" className="text-blue-600 underline">@enactussheffieldblades&brands</a></p>
         </div>
-      </section>
+      </section> */}
     </div>
         <Footer></Footer>
         </>
