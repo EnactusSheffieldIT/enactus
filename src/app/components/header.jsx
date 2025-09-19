@@ -20,7 +20,7 @@ export default function Home() {
             alt="Vercel Logo"
             
             height={30}
-            width={108}
+            width={300}
             // style={{width:'auto', height: "50px" }}
             className="brightness-0 invert"
           ></Image>
@@ -42,12 +42,11 @@ export default function Home() {
               {t("contact")}
             </Link> */}
           </div>
-          <div className="menulink  mt-5 hidden md:inline  [&>*]:transition-all">
-  
-            <Link href="/" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Home</Link>
-            <Link href="/#about" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">About</Link>
+          <div className="menulink  mt-5 hidden md:inline [&>*]:transition-all">
+
+            <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 hover:tracking-wide text-2xl ">About</Link>
             
-            <div className="dropdown">
+            {/* <div className="dropdown">
               <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn">Team
               <Image src="/main/hamburger.svg" width={25} height={25} alt="menu" className="inline ml-2"></Image></Link>
               <div className="dropdown-content bg-gray-800 text-white">
@@ -56,9 +55,9 @@ export default function Home() {
                 <Link href="/ii">Intellect Interpreters</Link>
                 <Link href="/blades&brands">Blades and Brands</Link>
               </div>
-            </div>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Apply Now</Link>
-            <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Contact</Link>
+            </div> */}
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-10 border-teal-300 hover:tracking-wide text-2xl">Apply Now</Link>
+            <Link href="/#contact" className="p-2 border-t-2 m-10 border-teal-300 hover:tracking-wide text-2xl">Contact</Link>
           </div>
           <div className="searchbox inline">
               <div className="flex flex-row text-white">
@@ -82,21 +81,20 @@ export default function Home() {
          
         </header>
      
-         <div className={`  md:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
+        <div className={`  md:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
          
           {isClick && (
             <>
               <div className="block !bg-gray-950 pt-3"> {/* fixing white gap  */}
-                 <div className="menulink  mt-5 [&>*]:block" >
+                 <div className="menulink  mt-8 [&>*]:block pt-8" >
   
-            <Link href="/#" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Home</Link>
-            <Link href="/#about" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">About</Link>
+            <Link href="/#about" className="pt-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">About</Link>
             
-              <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
+              {/* <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
                 <Link className="ml-5 p-2" href="/codecreators/#">CodeCreators</Link>
                 <Link className="ml-5 p-2" href="/carte/#">Carte</Link>
                 <Link className="ml-5 p-2" href="/ii/#">Intellect interpreters</Link>
-                <Link className="ml-5 p-2" href="/blades&brands/#">E-marketing</Link>
+                <Link className="ml-5 p-2" href="/blades&brands/#">E-marketing</Link> */}
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Apply Now</Link>
             <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Contact</Link>
           </div>

@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react"; // <-- added useRef and useEffect
 import gsap from "gsap";                // <-- import gsap
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // <-- import ScrollTrigger
 import Typewriter from 'typewriter-effect';
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -15,68 +16,21 @@ export default function Home() {
 
   // Initialize GSAP and scroll trigger on mount
   useEffect(() => {
-    // Initial animation for the logo
-    gsap.set(".theprojectcardlogo", {
-      position: "fixed",
-      top: "30%",
-      left: "50%",
-      xPercent: -50,
-      yPercent: -50,
-      scale: 2,
-      zIndex: 100
-    });
-
-    // Create a timeline for the logo animation
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".ourprojectcontainer",
-        start: "bottom 100%",
-        end: "bottom -20%",
-        scrub: 1,
-        markers: false,
-        onUpdate: (self) => {
-          // Calculate scale based on scroll progress
-          const scale = gsap.utils.interpolate(2, 1, self.progress);
-          const yPercent = gsap.utils.interpolate(-50, 0, self.progress);
-          // Modified xPercent interpolation to move towards left
-          const xPercent = gsap.utils.interpolate(-50, 0, self.progress);
-          const position = self.progress === 1 ? "relative" : "fixed";
-          const left = gsap.utils.interpolate(50, 0, self.progress);
-
-          gsap.set(".theprojectcardlogo", {
-            scale: scale,
-            yPercent: yPercent,
-            xPercent: xPercent,
-            position: position,
-            top: position === "relative" ? "auto" : "30%",
-            left: position === "relative" ? "auto" : `${left}%`
-          });
-        }
-      }
-    });
-    // Original project scroll animation
-    if (leftProjectRef.current && rightProjectRef.current && rightContentRef.current ) {
-      const numProjects = window.innerWidth > 768 ? 7.5 : 6;
-      const distance = window.innerHeight * (numProjects - 1);
-
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".ourprojectcontainer",
-          start: "top top",
-          end: () => `+=${distance}`,
-          scrub: true,
-          pin: true,
-          pinSpacing: true,
-          anticipatePin: 1,
-          markers: false,
-        }
-      }).to(rightContentRef.current, {
-        y: -distance,
-        ease: "none"
-      });
-    }
 
     // Timeline animations
+    gsap.from(".project-item", {
+      scrollTrigger: {
+        trigger: ".ourprojectscontainer",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      y: 50,
+      stagger: 0.3,
+      duration: 1
+    });
+
     gsap.from(".timeline-item", {
       scrollTrigger: {
         trigger: ".ourachievementcontainer",
@@ -108,7 +62,7 @@ export default function Home() {
       {/* bg-yellow-50  */}
       <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover min-h-[100vh] md:h-[700px] relative flex justify-center items-center">
         <div className="containerhero w-full bg-black/70 min-h-[100vh] md:h-[600px] h-full flex flex-col items-center p-5 md:p-0 relative justify-start ">
-          <h1 className="text-5xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%] mt-12 lg:mt-64 hero-introduction uppercase md:p-10">
+          <h1 className="text-3xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%] mt-40 lg:mt-64 hero-introduction uppercase md:p-10">
             Enactus Sheffield:{" "}
             <br />
             <div className="inline">
@@ -133,6 +87,12 @@ export default function Home() {
               />
             </div>
           </h1>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog"
+            className="sm:mt-8 border-2 p-3 text-center hover:bg-white hover:text-black border-white text-white text-xl sm:text-3xl font-extrabold"
+          >
+            We are currently looking for new members: <br></br> CLICK HERE TO REGISTER NOW!
+          </Link>
         </div>
 
         {/* Add the wave divider and partner section */}
@@ -151,8 +111,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="" id="about"></div>
-      <div className="aboutEnactus w-[80%] mx-auto my-32 text-xl">
+      <div className="aboutEnactus w-[80%] mx-auto text-xl">
         <h1 className="w-full text-center text-5xl font-semibold my-14">What is Enactus?</h1>
         <div className="flex flex-col md:flex-row justify-center items-center">
           {/* <Image src="/main/logo.png" alt="Vercel Logo" width={300} height={300} className="mb-6"></Image> */}
@@ -181,45 +140,64 @@ export default function Home() {
               Every year, we will complete in National Expo in honour to our hard work over the year.</p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+          <svg
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            className="relative block w-full h-[60px]"
+            style={{ transform: 'rotate(180deg)' }}
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              className="fill-yellow-400"
+            ></path>
+          </svg>
+        </div>
       </div>
-      <div className="ourprojectcontainer bg-yellow-400/90">
-        <div className="h-screen flex flex-col justify-center items-center">
-          <div className="flex flex-row w-full h-full">
-            <div ref={leftProjectRef} className="w-1/2 items-center justify-center hidden md:flex">
-              <div className="theprojectcardlogo">
-                <h1 className="text-center text-2xl font-semibold pb-10 pt-[20vh]">Our projects</h1>
-                <div className="flex flex-col items-center">
-                  <div className="flex flex-row">
-                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/codecreators/cc-logo.png"} alt="project logo"></Image>
-                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/Blades&Brands.png"} alt="project logo"></Image>
-                  </div>
-                  <div className="flex flex-row">
-                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/intellectinterpreters/intell.png"} alt="project logo"></Image>
-                    <Image width={150} height={100} className="block mix-blend-multiply" src={"/files/carte/carte.png"} alt="project logo"></Image>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              ref={rightProjectRef}
-              className="w-screen md:w-1/2 overflow-hidden relative"
-              id="project-scroll"
-            >
-              <div
-                ref={rightContentRef}
-                className="w-full"
-              >
-                <p className="flex-col items-center justify-center project-card pt-[200vh] hidden md:flex"></p>
 
-                <ProjectCard color="bg-blue-50" link="/codecreators" image="/files/codecreators/cc-logo.png" title="CodeCreators" content="Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students. " />
-                <ProjectCard color="bg-yellow-100" link="/blades&brands" image="/files/Blades&Brands.png" title="Blades and Brands" content="Blades and Brands is Enactus Sheffield's talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university. " />
-                <ProjectCard color="bg-red-50" link="/carte" image="/files/carte/carte.png" title="Carte" content="Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices. " />
-                <ProjectCard color="bg-blue-50" link="/ii" image="/files/intellectinterpreters/intell.png" title="Intellect Interpreters" content="Intellect interpreters is a university interpreting service that helps the community with translation services they may require. Our team will be made of students who can speak another language fluently and they will be trained to help people e.g. refugees with filling out forms and making appointments." />
+      <div className="ourprojectscontainer w-full bg-yellow-400">
+        <div className="aboutEnactus w-[80%] mx-auto text-xl">
+          <h1 className="w-full text-center text-5xl font-semibold pt-10">Our Projects</h1>
+          <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item bg-blue-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black">
+              <Image
+                src="/files/codecreators/cc-logo-no-bg.png" width={300} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
+                <h1>CODECREATORS</h1>
               </div>
+              <p className="pb-5" >Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students.</p>
+            </div>
+            <div className="project-item bg-yellow-100 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
+              <Image
+                src="/files/Blades&Brands-no-bg.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
+                <h1>BLADES AND BRANDS</h1>
+              </div>
+              <p className="pb-5" >Blades and Brands is Enactus Sheffield's talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university.</p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item bg-red-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black">
+              <Image
+                src="/files/carte/carte-no-bg.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
+                <h1>CARTE</h1>
+              </div>
+              <p className="pb-5">Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices.</p>
+            </div>
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
+              <Image
+                src="/files/intellectinterpreters/intell.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
+                <h1>INTELLECT INTERPRETERS</h1>
+              </div>
+              <p className="pb-5">Intellect interpreters is a university interpreting service that helps the community with translation services they may require. Our team will be made of students who can speak another language fluently and they will be trained to help people e.g. refugees with filling out forms and making appointments.</p>
             </div>
           </div>
         </div>
+        <br></br>
       </div>
+
       <div className="ourachievementcontainer my-32">
         <h1 className="w-full text-center text-5xl font-semibold mb-14">Our Achievements</h1>
         <div className="grid md:grid-cols-2 justify-items-center gap-3 md:gap-12 md:w-[90%] mx-auto text-center md:text-start max-w-[1000px]">
@@ -228,11 +206,6 @@ export default function Home() {
             <p className="text-xl">For the last decade we have been participating in the UK National Expo, where teams from across the country share their fantastic accomplishments.</p>
           </div>
         </div>
-
-
-
-
-
 
         <div className="relative flex justify-center">
           {/* Timeline line */}
@@ -243,11 +216,11 @@ export default function Home() {
             <div className="timeline-item flex items-center mb-20">
               <div className="w-[45%] text-right pr-8">
                 <div className="text-3xl font-bold">2024</div>
-                <p>Can Sheffield be the winner of Enactus World Cup? Stay tuned to our National Expo in 25th April, 2025</p>
+                <p>In 2024 we got in the top 20 in the nationals competition hosted in London, and are looking forward to next year's.</p>
               </div>   <div className="timeline-dot w-4 h-4 bg-yellow-500 rounded-full z-10"></div>
               <div className="w-[45%] pl-8">
                 <Image
-                  src="/main/hero-award.jpg"
+                  src="/files/nationals/london.jpg"
                   width={400}
                   height={300}
                   alt="2022 Award"
@@ -278,12 +251,12 @@ export default function Home() {
               <div className="w-[45%] text-right pr-8">
                 <div className="text-3xl font-bold">2022</div>
                 <p className="mb-4">National Runner up!</p>
-                <p>This year we came second in the National Competitions out of 60 other Enactus teams!</p>
+                <p>This year we came second in the nationals competition out of 60 other Enactus teams!</p>
               </div>
               <div className="timeline-dot w-4 h-4 bg-yellow-500 rounded-full z-10"></div>
               <div className="w-[45%] pl-8">
                 <Image
-                  src="/main/hero-award.jpg"
+                  src="/files/nationals/sheffield.jpg"
                   width={400}
                   height={300}
                   alt="2022 Award"
