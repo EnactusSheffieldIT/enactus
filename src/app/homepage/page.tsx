@@ -62,6 +62,7 @@ export default function Home() {
       {/* bg-yellow-50  */}
       <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover min-h-[100vh] md:h-[700px] relative flex justify-center items-center">
         <div className="containerhero w-full bg-black/70 min-h-[100vh] md:h-[600px] h-full flex flex-col items-center p-5 md:p-0 relative justify-start ">
+          <p className="text-white font-extrabold">MEETING IN THE DIAMOND WORKROOM 3: Wednesday 5pm-7pm</p>
           <h1 className="text-3xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%] mt-40 lg:mt-64 hero-introduction uppercase md:p-10">
             Enactus Sheffield:{" "}
             <br />

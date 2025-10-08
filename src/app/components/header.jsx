@@ -82,12 +82,10 @@ export default function Home() {
         </header>
      
         <div className={`  md:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
-         
           {isClick && (
             <>
               <div className="block !bg-gray-950 pt-3"> {/* fixing white gap  */}
                  <div className="menulink  mt-8 [&>*]:block pt-8" >
-  
             <Link href="/#about" className="pt-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">About</Link>
             
               {/* <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
