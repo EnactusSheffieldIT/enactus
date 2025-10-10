@@ -140,7 +140,7 @@ export default function Home() {
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-5xl font-semibold pt-10">Our Projects</h1>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            <div className="project-item bg-blue-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black">
+            <div className="project-item bg-blue-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
                 src="/files/codecreators/cc-logo-no-bg.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
@@ -148,7 +148,7 @@ export default function Home() {
               </div>
               <p className="pb-5" >Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students.</p>
             </div>
-            <div className="project-item bg-yellow-100 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
+            <div className="project-item bg-yellow-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
               <Image
                 src="/files/Blades&Brands-no-bg.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
@@ -158,7 +158,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            <div className="project-item bg-red-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black">
+            <div className="project-item bg-red-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
                 src="/files/carte/carte-no-bg.png" width={400} height={200} alt="Carte" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
@@ -166,7 +166,7 @@ export default function Home() {
               </div>
               <p className="pb-5">Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices.</p>
             </div>
-            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
                 src="/files/intellectinterpreters/intell.png" width={400} height={200} alt="Intellect interpreters" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
