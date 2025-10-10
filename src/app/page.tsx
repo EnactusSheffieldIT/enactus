@@ -105,7 +105,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="aboutEnactus w-[80%] mx-auto text-xl">
+      <div id="about" className="aboutEnactus w-[80%] mx-auto text-xl">
         <h1 className="w-full text-center text-5xl font-semibold my-14">What is Enactus?</h1>
         <div className="flex flex-col md:flex-row justify-center items-center">
           {/* <Image src="/main/logo.png" alt="Vercel Logo" width={300} height={300} className="mb-6"></Image> */}
