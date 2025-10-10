@@ -142,7 +142,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-blue-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black">
               <Image
-                src="/files/codecreators/cc-logo-no-bg.png" width={300} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/codecreators/cc-logo-no-bg.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
                 <h1>CODECREATORS</h1>
               </div>
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
             <div className="project-item bg-yellow-100 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
               <Image
-                src="/files/Blades&Brands-no-bg.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/Blades&Brands-no-bg.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
                 <h1>BLADES AND BRANDS</h1>
               </div>
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-red-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black">
               <Image
-                src="/files/carte/carte-no-bg.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/carte/carte-no-bg.png" width={400} height={200} alt="Carte" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
                 <h1>CARTE</h1>
               </div>
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
               <Image
-                src="/files/intellectinterpreters/intell.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/intellectinterpreters/intell.png" width={400} height={200} alt="Intellect interpreters" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
                 <h1>INTELLECT INTERPRETERS</h1>
               </div>
