@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 import { useEffect, useRef } from "react"; // <-- added useRef and useEffect
 import gsap from "gsap";                // <-- import gsap
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // <-- import ScrollTrigger
