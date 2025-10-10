@@ -35,12 +35,7 @@ export default function Home() {
                 <Image src="/main/hamburger.svg" width={47} height={47} alt="menu"></Image>
               )}
             </button>
-            {/* <Link
-              href="/contact-us"
-              className="rounded-2xl m-2 py-1 !px-3 !bg-blue-800 text-white hover:!bg-blue-500 transition-all inline-block"
-            >
-              {t("contact")}
-            </Link> */}
+
           </div>
           <div className="menulink  mt-5 hidden md:inline [&>*]:transition-all">
 
@@ -50,9 +45,10 @@ export default function Home() {
               <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn">Team
               <Image src="/main/hamburger.svg" width={25} height={25} alt="menu" className="inline ml-2"></Image></Link>
               <div className="dropdown-content bg-gray-800 text-white">
+                <Link href="/bladesandbrands">Blades & Brands</Link>
                 <Link href="/codecreators">CodeCreators</Link>
                 <Link href="/carte">Carte</Link>
-                <Link href="/ii">Intellect Interpreters</Link>
+                <Link href="/intellectinterpreters">Intellect Interpreters</Link>
                 <Link href="/blades&brands">Blades and Brands</Link>
               </div>
             </div> */}
