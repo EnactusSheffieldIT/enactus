@@ -18,12 +18,12 @@ export default function Home() {
           <Image
           // layout="responsive"
             src="/main/logo.png"
-            alt="Vercel Logo"
+            alt="Enactus"
             
             height={30}
-            width={300}
+            width={250}
             // style={{width:'auto', height: "50px" }}
-            className="brightness-0 invert"
+            className="brightness-0 invert pb-5"
           ></Image>
          
           <h2 className="ml-5 text-sm">University of Sheffield</h2>
