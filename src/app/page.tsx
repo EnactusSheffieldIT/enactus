@@ -112,24 +112,24 @@ export default function Home() {
           <iframe
 // srcDoc can lazyload youtube video making website load faster
             srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/2MTsFX2pw6M?autoplay=1><img src=https://img.youtube.com/vi/2MTsFX2pw6M/hqdefault.jpg alt='What is Enactus? – Enactus'><span>▶</span></a>"
-          width="560" height="315" src="https://www.youtube.com/embed/2MTsFX2pw6M?si=LK0KqW9yp-w0cSBw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          width="560" height="315" src="https://www.youtube.com/embed/2MTsFX2pw6M?si=LK0KqW9yp-w0cSBw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="rounded-2xl border-b-4 border-l-4 border-black/50"></iframe>
           <div className="flex flex-col md:w-[50%] md:ml-10">
-            <p className="bg-white p-2 rounded-2xl border-b-2 border-black border-l-4 "><b className="text-5xl text-yellow-500">EN</b> trepreneurial - having the perspective to see an opportunity and the talent to create value from that opportunity; </p>
-            <p className="bg-white p-2 rounded-2xl border-b-2 border-black border-l-4  mt-4">        <b className="text-5xl text-yellow-500">ACT</b>ion - the willingness to do something and the commitment to see it through even when the outcome is not guaranteed; </p>
-            <p className="bg-white p-2 rounded-2xl border-b-2 border-black border-l-4  mt-4"> <b className="text-5xl text-yellow-500">US</b>- a group of people who see themselves connected in some important way; individuals that are part of a greater whole..</p>
+            <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4 "><b className="text-5xl text-yellow-500">EN</b> trepreneurial - having the perspective to see an opportunity and the talent to create value from that opportunity; </p>
+            <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4  mt-4">        <b className="text-5xl text-yellow-500">ACT</b>ion - the willingness to do something and the commitment to see it through even when the outcome is not guaranteed; </p>
+            <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4  mt-4"> <b className="text-5xl text-yellow-500">US</b>- a group of people who see themselves connected in some important way; individuals that are part of a greater whole..</p>
 
           </div>
         </div>
         <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
 
-          <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
+          <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
             <Image
-              src="/files/Site Files/Enactus+Team+Clipart.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+              src="/files/Site Files/Enactus+Team+Clipart.png" width={400} height={200} alt="Team" className="block w-[200px] md:w-[400px]"></Image>
             <p>Our members innovate, research and manage social impact projects which provide sustainable solutions to local issues. Being part of Enactus is a unique and valuable experience as it facilitates student development in a broad range of areas, such as commercial and social entrepreneurship, technical experience and confidence building.</p>
           </div>
-          <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black ">
+          <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
             <Image
-              src="/files/Site Files/Enactus+Trophy+Clipart.png" width={400} height={200} alt="Vercel Logo" className="block w-[200px] md:w-[400px]"></Image>
+              src="/files/Site Files/Enactus+Trophy+Clipart.png" width={400} height={200} alt="Trophy" className="block w-[200px] md:w-[400px]"></Image>
             <p>We believe that Enactus is a great stepping stone to future employment, and a unique opportunity to learn a variety of skills in different fields.
               Every year, we will complete in National Expo in honour to our hard work over the year.</p>
           </div>
