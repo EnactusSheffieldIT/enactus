@@ -1,5 +1,5 @@
-import Head from "../components/header"
-import Footer from "../components/footer"
+import Head from "../../components/header"
+import Footer from "../../components/footer"
 import Image from "next/image";
 import "./codecreators.css"
 export default function Home() {
