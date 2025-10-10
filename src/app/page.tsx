@@ -57,10 +57,8 @@ export default function Home() {
       {/* bg-yellow-50  */}
       <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover min-h-[100vh] md:h-[700px] relative flex justify-center items-center">
         <div className="containerhero w-full bg-black/70 min-h-[100vh] md:h-[600px] h-full flex flex-col items-center p-5 md:p-0 relative justify-start ">
-          <p className="text-4xl text-white font-extrabold">MEETING IN THE DIAMOND WORKROOM 3: Wednesday 5pm-7pm</p>
-          <h1 className="text-3xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[80%] mt-40 lg:mt-64 hero-introduction uppercase md:p-10">
+          <h1 className="text-3xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[90%] mt-32 lg:mt-44 hero-introduction uppercase md:p-10 flex flex-col">
             Enactus Sheffield:{" "}
-            <br />
             <div className="inline">
               <Typewriter
                 options={{
@@ -85,7 +83,7 @@ export default function Home() {
           </h1>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog"
-            className="sm:mt-8 border-2 p-3 text-center hover:bg-white hover:text-black border-white text-white text-xl sm:text-3xl font-extrabold"
+            className="sm:mt-8 border-2 p-3 text-center hover:bg-white hover:text-black border-white text-white text-xl sm:text-3xl font-extrabold absolute bottom-20"
           >
             We are currently looking for new members: <br></br> CLICK HERE TO REGISTER NOW!
           </Link>
