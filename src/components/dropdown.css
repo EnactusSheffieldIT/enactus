@@ -39,23 +39,3 @@
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-  .whitetoyellow:hover{
-    & > a:hover{
-      filter: invert(0%) sepia() saturate(10000%) hue-rotate(342deg) brightness() contrast()
-
-    }
-    & > *>a:hover{
-      filter: invert(0%) sepia() saturate(10000%) hue-rotate(342deg) brightness() contrast()
-
-    }
-    & > *>*>*>a:hover > svg{
-      filter: invert(50%) sepia(50%) saturate(10000%) hue-rotate(209deg) brightness(80%) contrast();
-      transition: 0.4s all;
-
-    }
-  }
-  .logotoyellow > a:hover{
-    filter: invert(50%) sepia(50%) saturate(10000%) hue-rotate(209deg) brightness(80%) contrast();
-    transition: 0.4s all;
-  }

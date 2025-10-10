@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <div className="menulink  mt-5 hidden md:inline">
 
-            <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 text-2xl ">About</Link>
+            <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl ">About</Link>
             
             {/* <div className="dropdown">
               <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn">Team
@@ -53,19 +53,19 @@ export default function Home() {
                 <Link href="/blades&brands">Blades and Brands</Link>
               </div>
             </div> */}
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-10 border-teal-300 hover:tracking-wide text-2xl">Apply Now</Link>
-            <Link href="/#contact" className="p-2 border-t-2 m-10 border-teal-300 hover:tracking-wide text-2xl">Contact</Link>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Apply Now</Link>
+            <Link href="/#contact" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Contact</Link>
           </div>
           <div className="">
               <div className="flex flex-row text-white">
                   <div className="md:m-5 m-2">
-                    <a href="https://linktr.ee/enactus_sheffield"><SiLinktree className="h-[24px] w-[24px] text-white"/></a>
+                    <a href="https://linktr.ee/enactus_sheffield"><SiLinktree className="h-[24px] w-[24px] text-white hover:text-yellow-300 duration-150"/></a>
                   </div>
                   <div className="w-[24px] md:m-5 m-2">
-                    <a href="https://www.linkedin.com/company/enactus-sheffield-limited/"><SiLinkedin className="h-[24px] w-[24px] text-white"/></a>  
+                    <a href="https://www.linkedin.com/company/enactus-sheffield-limited/"><SiLinkedin className="h-[24px] w-[24px] text-white hover:text-yellow-300 duration-150"/></a>  
                   </div>
                   <div className="w-[24px] md:m-5 m-2">
-                    <a href="https://www.instagram.com/enactussheffield_/"><SiInstagram className="h-[24px] w-[24px] text-white"/></a>
+                    <a href="https://www.instagram.com/enactussheffield_/"><SiInstagram className="h-[24px] w-[24px] text-white hover:text-yellow-300 duration-150"/></a>
                   </div>
                 </div>
           </div>
