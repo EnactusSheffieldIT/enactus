@@ -90,7 +90,7 @@ export default function Footer() {
                 </div>
                 <h1 className="text-2xl font-thin">Additional Links:</h1>
                 <div className="flex flex-col">
-                  <a className="underline hover:text-yellow-500 duration-150" href="https://docs.google.com/forms/d/e/1FAIpQLSe1KD4HgrdXK8z7YKPpV2awUdCjBS5FCgKbIpwMqok9l3OGhQ/viewform?usp=header">Complaints Google Form Link</a>
+                  <a className="underline hover:text-yellow-500 duration-150" href="https://docs.google.com/forms/d/e/1FAIpQLSe1KD4HgrdXK8z7YKPpV2awUdCjBS5FCgKbIpwMqok9l3OGhQ/viewform?usp=header" target="_blank">Complaints Google Form Link</a>
                   <a className="underline hover:text-yellow-500 duration-150" href="files/Enactus Sheffield Complaints Policy.pdf" target="_blank">Complaints Policy Download</a>
                 </div>
               </div>

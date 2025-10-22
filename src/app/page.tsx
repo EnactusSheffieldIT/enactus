@@ -84,6 +84,7 @@ export default function Home() {
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog"
             className="sm:mt-8 border-2 p-3 text-center hover:bg-white hover:text-black border-white text-white text-xl sm:text-3xl font-extrabold absolute bottom-20"
+            target="_blank"
           >
             We are currently looking for new members: <br></br> CLICK HERE TO REGISTER NOW!
           </Link>
