@@ -67,7 +67,7 @@ export default function Footer() {
                 <input className="border-b-2 border-black bg-transparent" type="email" name="entry.1074342250" placeholder=" contact@your-email.com" required />
                 <label className="ml-3" htmlFor="message">Message</label>
                 <textarea name="entry.828181153" id="" className="h-[100px] border-2"></textarea>
-                <label className="ml-3" htmlFor="antibot">What is {random1} + {random2}</label>
+                <label className="ml-3" htmlFor="antibot">What is {random1} + {random2}?</label>
                 <input type="number" name="antibot" required className="border-b-2 border-black bg-transparent" />
                 <button type="submit" disabled={isLoading} className={`hover:cursor-pointer  text-white mt-7 hover:bg-yellow-500 hover:border-transparent ${isLoading ? 'bg-gray-500' : 'bg-blue-600'}`}>{isLoading ? 'Loading' : 'Submit'}</button>
                 <input hidden name="entry.156039453" defaultValue={pathname} />
@@ -84,9 +84,14 @@ export default function Footer() {
 
               <div className="mapouter">
                 <div className="gmap_canvas">
-                  <iframe width="600" height="400" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.84857658308!2d-1.4857545235266423!3d53.38175877229961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879827f5fa2c59b%3A0xbb0e179582dae894!2sElla%20Armitage%20Building!5e0!3m2!1sen!2suk!4v1757966129168!5m2!1sen!2suk"></iframe>
+                  <iframe width="600" height="270" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.84857658308!2d-1.4857545235266423!3d53.38175877229961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879827f5fa2c59b%3A0xbb0e179582dae894!2sElla%20Armitage%20Building!5e0!3m2!1sen!2suk!4v1757966129168!5m2!1sen!2suk"></iframe>
                   <br />
                   <a href="https://www.embedgooglemap.net"></a>
+                </div>
+                <h1 className="text-2xl font-thin">Additional Links:</h1>
+                <div className="flex flex-col">
+                  <a className="underline hover:text-yellow-500 duration-150" href="https://docs.google.com/forms/d/e/1FAIpQLSe1KD4HgrdXK8z7YKPpV2awUdCjBS5FCgKbIpwMqok9l3OGhQ/viewform?usp=header">Complaints Google Form Link</a>
+                  <a className="underline hover:text-yellow-500 duration-150" href="files/Enactus Sheffield Complaints Policy.pdf" target="_blank">Complaints Policy Download</a>
                 </div>
               </div>
             </div>
