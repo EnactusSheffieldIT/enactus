@@ -188,7 +188,7 @@ export default function Home() {
                 <h1>MANAGING DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Ben" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
               <div className="font-extrabold text-2xl pb-5">
                 <h1>BEN SIMPSON</h1>
               </div>
@@ -198,10 +198,10 @@ export default function Home() {
           <div className="grid md:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
-                <h1>PUBLIC RELATIONS</h1>
+                <h1>PUBLIC RELATIONS DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Jiunn" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
               <div className="font-extrabold text-2xl pb-5">
                 <h1>WEN JIUNN LOH</h1>
               </div>
@@ -212,7 +212,7 @@ export default function Home() {
                 <h1>HUMAN RESOURCES DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus_team/danica.jpg" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+                src="/files/enactus_team/danica.jpg" width={400} height={200} alt="Danica" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
               <div className="font-extrabold text-2xl pb-5">
                 <h1>DANICA BAUTISTA</h1>
               </div>
@@ -253,7 +253,7 @@ export default function Home() {
                 <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Suzy" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
               <div className="font-extrabold text-2xl pb-5">
                 <h1>SUZY JOLLIFF</h1>
               </div>
@@ -264,7 +264,7 @@ export default function Home() {
                 <h1>CODECREATORS PROJECT LEADER</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Oliver" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
               <div className="font-extrabold text-2xl pb-5">
                 <h1>OLIVER GOODWIN-DAY</h1>
               </div>
