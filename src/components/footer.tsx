@@ -84,15 +84,33 @@ export default function Footer() {
 
               <div className="mapouter">
                 <div className="gmap_canvas">
-                  <iframe width="600" height="270" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.84857658308!2d-1.4857545235266423!3d53.38175877229961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879827f5fa2c59b%3A0xbb0e179582dae894!2sElla%20Armitage%20Building!5e0!3m2!1sen!2suk!4v1757966129168!5m2!1sen!2suk"></iframe>
-                  <br />
-                  <a href="https://www.embedgooglemap.net"></a>
+                  <div className="relative w-full md:w-[600px] h-[270px] mx-auto">
+                    <iframe id="gmap_canvas" className= "w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.84857658308!2d-1.4857545235266423!3d53.38175877229961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879827f5fa2c59b%3A0xbb0e179582dae894!2sElla%20Armitage%20Building!5e0!3m2!1sen!2suk!4v1757966129168!5m2!1sen!2suk"></iframe>
+                    <br />
+                    <a href="https://www.embedgooglemap.net"></a>
+                  </div>
                 </div>
-                <h1 className="text-2xl font-thin">Additional Links:</h1>
-                <div className="flex flex-col">
-                  <a className="underline hover:text-yellow-500 duration-150" href="https://docs.google.com/forms/d/e/1FAIpQLSe1KD4HgrdXK8z7YKPpV2awUdCjBS5FCgKbIpwMqok9l3OGhQ/viewform?usp=header" target="_blank">Complaints Google Form Link</a>
-                  <a className="underline hover:text-yellow-500 duration-150" href="files/Enactus Sheffield Complaints Policy.pdf" target="_blank">Complaints Policy Download</a>
+
+                <div className="flex flex-col md:flex-row gap-8 mt-6">
+                <div className="flex-1">
+                  <h1 className="text-2xl font-thin">Alternative Contact</h1>
+                  <p className="">
+                    Email: <a href="mailto:enactussheffieldit@gmail.com" className="underline hover:text-yellow-500">enactussheffieldit@gmail.com</a>
+                  </p>
+                  <p className="mb-2">
+                    DM: <a href="https://www.instagram.com/enactussheffield_/" className="underline hover:text-yellow-500">Instagram</a>
+                  </p>
                 </div>
+
+                <div className="flex-1">
+                  <h1 className="text-2xl font-thin">Additional Links</h1>
+                  <div className="flex flex-col">
+                    <a className="underline hover:text-yellow-500 duration-150" href="https://docs.google.com/forms/d/e/1FAIpQLSe1KD4HgrdXK8z7YKPpV2awUdCjBS5FCgKbIpwMqok9l3OGhQ/viewform?usp=header" target="_blank">Complaints Google Form Link</a>
+                    <a className="underline hover:text-yellow-500 duration-150" href="files/Enactus Sheffield Complaints Policy.pdf" target="_blank">Complaints Policy Download</a>
+                  </div>
+                </div>
+
+              </div>
               </div>
             </div>
             {/* <h3 className='logotoyellow'>Email:</h3>

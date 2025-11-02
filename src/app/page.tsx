@@ -107,13 +107,8 @@ export default function Home() {
       </div>
 
       <div id="about" className="aboutEnactus w-[80%] mx-auto text-xl">
-        <h1 className="w-full text-center text-5xl font-semibold my-14">What is Enactus?</h1>
+        <h1 className="w-full text-center text-4xl md:text-5xl font-semibold my-14">What is Enactus?</h1>
         <div className="flex flex-col md:flex-row justify-center items-center">
-          {/* <Image src="/main/logo.png" alt="Vercel Logo" width={300} height={300} className="mb-6"></Image> */}
-          <iframe
-// srcDoc can lazyload youtube video making website load faster
-            srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/2MTsFX2pw6M?autoplay=1><img src=https://img.youtube.com/vi/2MTsFX2pw6M/hqdefault.jpg alt='What is Enactus? – Enactus'><span>▶</span></a>"
-          width="560" height="315" src="https://www.youtube.com/embed/2MTsFX2pw6M?si=LK0KqW9yp-w0cSBw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="rounded-2xl border-b-4 border-l-4 border-black/50"></iframe>
           <div className="flex flex-col md:w-[50%] md:ml-10">
             <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4 "><b className="text-5xl text-yellow-500">EN</b> trepreneurial - having the perspective to see an opportunity and the talent to create value from that opportunity; </p>
             <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4  mt-4">        <b className="text-5xl text-yellow-500">ACT</b>ion - the willingness to do something and the commitment to see it through even when the outcome is not guaranteed; </p>
@@ -121,8 +116,12 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-
+        <div className="grid md:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16">
+          <div className="items-center bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+            <Image
+              src="/files/enactus/enactus_sheffield_logo.png" width={400} height={200} alt="Team" className="block w-[200px] md:w-[520px]"></Image>
+            <p>Enactus Sheffield is a student social enterprise company, located at the University of Sheffield. Our student volunteers run local impact projects, helping local charities and individuals in need in society. Working towards the 17 UN Sustainable Development Goals, Enactus Sheffield is apart of the international network of Enactus Students.</p>
+          </div>
           <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
             <Image
               src="/files/Site Files/Enactus+Team+Clipart.png" width={400} height={200} alt="Team" className="block w-[200px] md:w-[400px]"></Image>
@@ -139,7 +138,7 @@ export default function Home() {
 
       <div className="ourprojectscontainer w-full bg-yellow-400">
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
-          <h1 className="w-full text-center text-5xl font-semibold pt-10">Our Projects</h1>
+          <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Our Projects</h1>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-blue-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
@@ -147,7 +146,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
                 <h1>CODECREATORS</h1>
               </div>
-              <p className="pb-5" >Introduces students to programming in Python, supplementing their education in analytics, computer science and digital infrastructure.This year, we want to expand Code Creators and develop a fun course that we can offer to school students.</p>
+              <p className="pb-5" >Our commercial project, CodeCreators, is a student run IT & Coding Class, targeting students and university staff to increase digital literacy and coding in languages such as Python or Excel. Running since 2017, we have raised thousands of pounds towards Enactus initiatives, and looking to expand to directly supporting charities in the coming year.</p>
             </div>
             <div className="project-item bg-yellow-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
               <Image
@@ -155,7 +154,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
                 <h1>BLADES AND BRANDS</h1>
               </div>
-              <p className="pb-5" >Blades and Brands is Enactus Sheffield&apos;s talented internal PR team. They provide digital marketing for Enactus Sheffield projects and work to promote digital literacy and social media skills across Enactus and the university.</p>
+              <p className="pb-5" >Our in-house marketing team, currently called Blades and Brands, markets all of our projects online, such as on Instagram or LinkedIn, to raise awareness of our projects and our members achievements. </p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
@@ -165,7 +164,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
                 <h1>CARTE</h1>
               </div>
-              <p className="pb-5">Still in its initial stages, this project works together with Sheffield Voices, to bring students and people with learning disability together to create and sell cards. The profit will is fed back into supporting the Art Programme at Sheffield Voices.</p>
+              <p className="pb-5">One of our other local impact projects, Carte, is a card manufacturing project, selling cards designed by members of local learning disability charities and community centres, raising money for those charities. Working with local charities such as Mencap, Keyring and Sheffield Voices, we seek to sell cards and tote bags in local markets and online to raise money and  to our local sheffield charity partners.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
@@ -173,15 +172,119 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
                 <h1>INTELLECT INTERPRETERS</h1>
               </div>
-              <p className="pb-5">Intellect interpreters is a university interpreting service that helps the community with translation services they may require. Our team will be made of students who can speak another language fluently and they will be trained to help people e.g. refugees with filling out forms and making appointments.</p>
+              <p className="pb-5">One of our local impact projects, Intellect Interpreters, is a student volunteering based project that provide free translation services for asylum seekers in the city of Sheffield. Working closely with the city of Sanctuary, a Sheffield Charity, our volunteers help with translation and interpretation at sessions during the week, as well as looking to find new ways to assist the charity though fundraising methods.</p>
             </div>
           </div>
         </div>
         <br></br>
       </div>
 
+      <div className="ourprojectscontainer w-full">
+        <div className="aboutEnactus w-[80%] mx-auto text-xl">
+          <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Meet The Team</h1>
+          <div className="grid md:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item md:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+                <h1>MANAGING DIRECTOR</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-2xl">
+                <h1>BEN SIMPSON</h1>
+              </div>
+              <p className="pb-5" ></p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+                <h1>PUBLIC RELATIONS</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-2xl">
+                <h1>WEN JUINN LOH</h1>
+              </div>
+              <p className="pb-5" ></p>
+            </div>
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+                <h1>HUMAN RELATIONS</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-2xl">
+                <h1>DANICA BAUTISTA</h1>
+              </div>
+              <p className="pb-5" ></p>
+            </div>
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+                <h1>FINANCE DIRECTOR</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Elena" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-2xl">
+                <h1>ELENA BOITAN</h1>
+              </div>
+              <p className="pb-5" ></p>
+            </div>
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+                <h1>IT DIRECTOR</h1>
+              </div>
+              <Image
+                src="/files/enactus_team/niall.png" width={300} height={200} alt="Niall" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-2xl">
+                <h1>NIALL DODDS</h1>
+              </div>
+              <div className="font-extrabold text-2xl">
+                <h1>MComp Computer Science</h1>
+              </div>
+                <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge{"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it's the IT director&apos;s job to help.</p>
+              <p className="pb-5" ></p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item md:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+                <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-2xl">
+                <h1>SUZY JOLLIFF</h1>
+              </div>
+              <p className="pb-5" ></p>
+            </div>
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+                <h1>CODECREATORS PROJECT LEADER</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
+              <div className="font-extrabold text-2xl">
+                <h1>OLIVER GOODWIN-DAY</h1>
+              </div>
+              <p className="pb-5" ></p>
+            </div>
+          </div>
+        </div>
+        <br></br>
+      </div>
+
+      <div className="ourprojectscontainer w-full bg-yellow-400">
+        <div className="aboutEnactus w-[80%] mx-auto text-xl">
+          <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Announcements</h1>
+          <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            
+          </div>
+        </div>
+        <br></br>
+      </div>
+
       <div className="ourachievementcontainer my-32">
-        <h1 className="w-full text-center text-5xl font-semibold mb-14">Our Achievements</h1>
+        <h1 className="w-full text-center text-4xl md:text-5xl font-semibold mb-14">Our Achievements</h1>
         <div className="grid md:grid-cols-2 justify-items-center gap-3 md:gap-12 md:w-[90%] mx-auto text-center md:text-start max-w-[1000px]">
           <div className="col-span-2 p-5 !text-center">
             <h1 className=" text-4xl font-semibold">National Expo</h1>
@@ -191,10 +294,10 @@ export default function Home() {
 
         <div className="relative flex justify-center">
           {/* Timeline line */}
-          <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-yellow-500"></div>
+          <div className=" md:flex absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-yellow-500"></div>
 
           {/* Timeline content */}
-          <div className="w-[80%] max-w-[1000px] translate-x-[42px]">
+          <div className="w-[80%] max-w-[1000px] md:translate-x-[42px] translate-x-[8px]">
             <div className="timeline-item flex items-center mb-20">
               <div className="w-[45%] text-right pr-8">
                 <div className="text-3xl font-bold">2024</div>
@@ -212,7 +315,7 @@ export default function Home() {
             </div>
 
             <div className="timeline-item flex items-center mb-20">
-              <div className="w-[45%] pl-8">
+              <div className="w-[45%] pr-5">
                 <Image
                   src="/main/hero-award.jpg"
                   width={400}
