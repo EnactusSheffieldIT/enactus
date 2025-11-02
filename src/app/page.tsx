@@ -241,7 +241,7 @@ export default function Home() {
               <div className="font-extrabold text-2xl">
                 <h1>MComp Computer Science</h1>
               </div>
-                <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge{"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it's the IT director&apos;s job to help.</p>
+                <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge{"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it&apos;s the IT director&apos;s job to help.</p>
               <p className="pb-5" ></p>
             </div>
           </div>
