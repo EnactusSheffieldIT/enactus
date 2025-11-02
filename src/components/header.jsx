@@ -76,18 +76,17 @@ export default function Home() {
           {isClick && (
             <>
               <div className="block !bg-gray-950 pt-3"> {/* fixing white gap  */}
-                 <div className="menulink  mt-8 [&>*]:block pt-8" >
-            <Link href="/#about" className="pt-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">About</Link>
-            
-              {/* <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
-                <Link className="ml-5 p-2" href="/codecreators/#">CodeCreators</Link>
-                <Link className="ml-5 p-2" href="/carte/#">Carte</Link>
-                <Link className="ml-5 p-2" href="/ii/#">Intellect interpreters</Link>
-                <Link className="ml-5 p-2" href="/blades&brands/#">E-marketing</Link> */}
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide" target="_blank">Apply Now</Link>
-            <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide">Contact</Link>
-          </div>
+                <div className="menulink mt-10 [&>*]:block pt-8" >
+                  <Link href="/#about" className="pt-2 border-t-2 m-2 border-teal-300 hover:tracking-wide pl-2 pb-2">About</Link>
+                    {/* <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
+                      <Link className="ml-5 p-2" href="/codecreators/#">CodeCreators</Link>
+                      <Link className="ml-5 p-2" href="/carte/#">Carte</Link>
+                      <Link className="ml-5 p-2" href="/ii/#">Intellect interpreters</Link>
+                      <Link className="ml-5 p-2" href="/blades&brands/#">E-marketing</Link> */}
+                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide" target="_blank">Apply Now</Link>
+                  <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide ">Contact</Link>
                 </div>
+              </div>
             </>
           )}
         </div></>
