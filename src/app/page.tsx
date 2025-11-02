@@ -188,8 +188,8 @@ export default function Home() {
                 <h1>MANAGING DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-2xl">
+                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-2xl pb-5">
                 <h1>BEN SIMPSON</h1>
               </div>
               <p className="pb-5" ></p>
@@ -201,30 +201,33 @@ export default function Home() {
                 <h1>PUBLIC RELATIONS</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-2xl">
-                <h1>WEN JUINN LOH</h1>
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-2xl pb-5">
+                <h1>WEN JIUNN LOH</h1>
               </div>
               <p className="pb-5" ></p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
-                <h1>HUMAN RELATIONS</h1>
+                <h1>HUMAN RESOURCES DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-2xl">
+                src="/files/enactus_team/danica.jpg" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-2xl pb-5">
                 <h1>DANICA BAUTISTA</h1>
               </div>
-              <p className="pb-5" ></p>
+              <div className="font-extrabold text-2xl">
+                <h1>BA Business Management</h1>
+              </div>
+              <p className="pb-5" >The Human Resources Director is responsible for training members by handling inductions, facilitating handovers and, if necessary, conducting disciplinaries such as performance reviews, follow-up meetings, and/or dismissals. They are there to ensure members are well supported in order to achieve performance targets within Enactus Sheffield.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
                 <h1>FINANCE DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Elena" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-2xl">
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Elena" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-2xl pb-5">
                 <h1>ELENA BOITAN</h1>
               </div>
               <p className="pb-5" ></p>
@@ -235,14 +238,13 @@ export default function Home() {
               </div>
               <Image
                 src="/files/enactus_team/niall.png" width={300} height={200} alt="Niall" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl">
+              <div className="font-extrabold text-2xl pb-5">
                 <h1>NIALL DODDS</h1>
               </div>
               <div className="font-extrabold text-2xl">
                 <h1>MComp Computer Science</h1>
               </div>
-                <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge{"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it&apos;s the IT director&apos;s job to help.</p>
-              <p className="pb-5" ></p>
+              <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge{"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it&apos;s the IT director&apos;s job to help.</p>
             </div>
           </div>
           <div className="grid md:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
@@ -251,8 +253,8 @@ export default function Home() {
                 <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-2xl">
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-2xl pb-5">
                 <h1>SUZY JOLLIFF</h1>
               </div>
               <p className="pb-5" ></p>
@@ -262,8 +264,8 @@ export default function Home() {
                 <h1>CODECREATORS PROJECT LEADER</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-2xl">
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-2xl pb-5">
                 <h1>OLIVER GOODWIN-DAY</h1>
               </div>
               <p className="pb-5" ></p>
