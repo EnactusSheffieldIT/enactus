@@ -119,7 +119,7 @@ export default function Home() {
           <div className="items-center bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
             <Image
               src="/files/enactus/enactus_sheffield_logo.png" width={400} height={200} alt="Team" className="block w-[200px] md:w-[520px]"></Image>
-            <p>Enactus Sheffield is a student social enterprise company, located at the University of Sheffield. Our student volunteers run local impact projects, helping local charities and individuals in need in society. Working towards the 17 UN Sustainable Development Goals, Enactus Sheffield is apart of the international network of Enactus Students.</p>
+            <p>Enactus Sheffield is a student social enterprise company, located at the University of Sheffield. Our student volunteers run local impact projects, helping local charities and individuals in need in society. Working towards the 17 UN Sustainable Development Goals, Enactus Sheffield is a part of the international network of Enactus Students.</p>
           </div>
           <div className="bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
             <Image
@@ -163,7 +163,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
                 <h1>CARTE</h1>
               </div>
-              <p className="pb-5">One of our other local impact projects, Carte, is a card manufacturing project, selling cards designed by members of local learning disability charities and community centres, raising money for those charities. Working with local charities such as Mencap, Keyring and Sheffield Voices, we seek to sell cards and tote bags in local markets and online to raise money and  to our local sheffield charity partners.</p>
+              <p className="pb-5">One of our other local impact projects, Carte, is a card manufacturing project, selling cards designed by members of local learning disability charities and community centres, raising money for those charities. Working with local charities such as Mencap, Keyring and Sheffield Voices, we seek to sell cards and tote bags in local markets and online to raise money for local sheffield charities.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
@@ -171,7 +171,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
                 <h1>INTELLECT INTERPRETERS</h1>
               </div>
-              <p className="pb-5">One of our local impact projects, Intellect Interpreters, is a student volunteering based project that provide free translation services for asylum seekers in the city of Sheffield. Working closely with the city of Sanctuary, a Sheffield Charity, our volunteers help with translation and interpretation at sessions during the week, as well as looking to find new ways to assist the charity though fundraising methods.</p>
+              <p className="pb-5">One of our local impact projects, Intellect Interpreters, is a volunteering based project that provides free translation services for asylum seekers in the city of Sheffield. Working closely with the city of Sanctuary, a Sheffield Charity, our volunteers help with translation and interpretation at sessions during the week, as well as looking to find new ways to assist the charity though fundraising methods.</p>
             </div>
           </div>
         </div>
@@ -236,9 +236,9 @@ export default function Home() {
                 <h1>ELENA BOITAN</h1>
               </div>
               <div className="font-extrabold text-xl">
-                <h1>BA Business Management with Economics</h1>
+                <h1>BA Business Management and Economics</h1>
               </div>
-              <p className="pb-5" ></p>
+              <p className="pb-5" >As Finance Director, I ensure the organisation remains financially stable and compliant, providing a solid foundation for projects to thrive and create meaningful community impact. At Enactus, I’m excited to combine my passion for numbers with my commitment to driving positive change - contributing to a community that values sustainable growth and strives to make the world a better place. I couldn’t be happier to be part of it!</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
@@ -352,7 +352,7 @@ export default function Home() {
               <div className="timeline-dot w-4 h-4 bg-yellow-500 rounded-full z-10"></div>
               <div className="w-[45%] pl-8">
                 <div className="text-3xl font-bold">2023</div>
-                <p>This year we got into regional finals and compete in top 15 national</p>
+                <p>This year we got into regional finals and competed in the nationals competition.</p>
               </div>
 
             </div>
