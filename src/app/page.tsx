@@ -113,7 +113,6 @@ export default function Home() {
             <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4 "><b className="text-5xl text-yellow-500">EN</b> trepreneurial - having the perspective to see an opportunity and the talent to create value from that opportunity; </p>
             <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4  mt-4">        <b className="text-5xl text-yellow-500">ACT</b>ion - the willingness to do something and the commitment to see it through even when the outcome is not guaranteed; </p>
             <p className="bg-white p-2 rounded-2xl border-b-2 border-black/50 border-l-4  mt-4"> <b className="text-5xl text-yellow-500">US</b>- a group of people who see themselves connected in some important way; individuals that are part of a greater whole..</p>
-
           </div>
         </div>
         <div className="grid md:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16">
@@ -146,7 +145,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
                 <h1>CODECREATORS</h1>
               </div>
-              <p className="pb-5" >Our commercial project, CodeCreators, is a student run IT & Coding Class, targeting students and university staff to increase digital literacy and coding in languages such as Python or Excel. Running since 2017, we have raised thousands of pounds towards Enactus initiatives, and looking to expand to directly supporting charities in the coming year.</p>
+              <p className="pb-5" >Our commercial project, CodeCreators, is a student run IT & Coding Class, targeting students and university staff to increase digital literacy and coding in languages such as Python and Google Sheets. Running since 2017, we have raised thousands of pounds towards Enactus initiatives, and looking to expand to directly supporting charities in the coming year.</p>
             </div>
             <div className="project-item bg-yellow-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
               <Image
@@ -188,7 +187,7 @@ export default function Home() {
                 <h1>MANAGING DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus_team/ben.png" width={400} height={200} alt="Ben" className="block w-[200px] md:w-[250px] rounded-xl"></Image>
+                src="/files/enactus_team/ben.png" width={400} height={200} alt="Ben" className="block w-[400px] xl:w-[250px] rounded-xl"></Image>
               <div className="font-extrabold text-xl pb-5">
                 <h1>BEN SIMPSON</h1>
               </div>
@@ -293,8 +292,17 @@ export default function Home() {
       <div id="announcements" className="announcementcontainer w-full bg-yellow-400">
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Announcements</h1>
-          <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            
+          <div className="max-h-[500px] overflow-y-auto mt-10 mb-10 space-y-10">
+
+            <div className="grid :grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+              <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+                <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                  <h1>WE ARE HIRING!</h1>
+                </div>
+                <p className="pb-5" >We're currently hiring for all projects, if you're interested, follow the link in the navigation bar!</p>
+              </div>
+            </div>
+
           </div>
         </div>
         <br></br>
