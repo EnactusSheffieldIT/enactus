@@ -163,7 +163,7 @@ export default function Home() {
               <div className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
                 <h1>CARTE</h1>
               </div>
-              <p className="pb-5">One of our other local impact projects, Carte, is a card manufacturing project, selling cards designed by members of local learning disability charities and community centres, raising money for those charities. Working with local charities such as Mencap, Keyring and Sheffield Voices, we seek to sell cards and tote bags in local markets and online to raise money for local sheffield charities.</p>
+              <p className="pb-5">One of our other local impact projects, Carte, is a card manufacturing project, selling cards designed by members of local learning disability charities and community centres, raising money for those charities. Working with local charities such as Mencap, Keyring and Sheffield Voices, we seek to sell cards and tote bags in local markets and online to raise money for our local Sheffield charity partners.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
