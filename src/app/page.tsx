@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
-                src="/files/intellectinterpreters/intell.png" width={400} height={200} alt="Intellect interpreters" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/intellectinterpreters/ii.png" width={400} height={200} alt="Intellect interpreters" className="block w-[200px] md:w-[400px] p-11"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
                 <h1>INTELLECT INTERPRETERS</h1>
               </div>
