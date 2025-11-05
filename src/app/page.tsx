@@ -299,7 +299,7 @@ export default function Home() {
                 <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                   <h1>WE ARE HIRING!</h1>
                 </div>
-                <p className="pb-5" >We're currently hiring for all projects, if you're interested, follow the link in the navigation bar!</p>
+                <p className="pb-5" >We&apos;re currently hiring for all projects, if you&apos;re interested, follow the link in the navigation bar!</p>
               </div>
             </div>
 
