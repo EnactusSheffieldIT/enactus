@@ -56,7 +56,7 @@ export default function Footer() {
   return (
     <footer className="overflow-hidden">
       <div className="ourcontactcontainer w-full bg-black p-6">
-        <div className="flex bg-white md:p-8 p-2 w-fit rounded-lg gap-10 mx-auto md:flex-row flex-col">
+        <div className="flex bg-white md:p-8 p-2 w-fit rounded-lg gap-10 mx-auto xl:flex-row flex-col">
           <form ref={formRef} onSubmit={handleSubmit} className="rounded-lg flex flex-col gap-y-1 w-[90%] md:w-[600px] mx-auto mb-12">
             {!isSubmitted && 
               <>

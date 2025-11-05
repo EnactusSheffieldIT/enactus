@@ -14,7 +14,7 @@ export default function Home() {
     return (
       <>
         <header className={`flex flex-row justify-evenly items-center bg-transparent text-white top-0 z-30 whitetoyellow absolute w-[100%] ${isClick == true || pathname != "/"?"!bg-black": ""}  ${pathname != "/"?"!relative": ""}`}>
-          <Link href="/" className="flex flex-col md:my-5 mt-2">
+          <Link href="/" className="flex flex-col xl:my-5 mt-2">
           <Image
           // layout="responsive"
             src="/main/logo.png"
@@ -28,7 +28,7 @@ export default function Home() {
          
           <h2 className="ml-5 text-sm">University of Sheffield</h2>
           </Link>
-          <div className="flex md:hidden basis-auto">
+          <div className="flex xl:hidden basis-auto">
             <button onClick={toggleNavbar}>
               {isClick ? (
                 <Image src="/main/cross.svg" width={47} height={47} alt="menu"></Image>
@@ -36,9 +36,8 @@ export default function Home() {
                 <Image src="/main/hamburger.svg" width={47} height={47} alt="menu"></Image>
               )}
             </button>
-
           </div>
-          <div className="menulink  mt-5 hidden md:inline">
+          <div className="menulink  mt-5 hidden xl:inline">
 
             <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl ">About</Link>
             
@@ -54,6 +53,7 @@ export default function Home() {
               </div>
             </div> */}
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl" target="_blank">Apply Now</Link>
+            <Link href="/#announcements" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Announcements</Link>
             <Link href="/#contact" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Contact</Link>
           </div>
           <div className="">
@@ -72,10 +72,10 @@ export default function Home() {
          
         </header>
      
-        <div className={`  md:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
+        <div className={`  xl:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
           {isClick && (
             <>
-              <div className="block !bg-gray-950 pt-3"> {/* fixing white gap  */}
+              <div className="block !bg-gray-950 pt-3">
                 <div className="menulink mt-10 [&>*]:block pt-8" >
                   <Link href="/#about" className="pt-2 border-t-2 m-2 border-teal-300 hover:tracking-wide pl-2 pb-2">About</Link>
                     {/* <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
@@ -84,6 +84,7 @@ export default function Home() {
                       <Link className="ml-5 p-2" href="/ii/#">Intellect interpreters</Link>
                       <Link className="ml-5 p-2" href="/blades&brands/#">E-marketing</Link> */}
                   <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide" target="_blank">Apply Now</Link>
+                  <Link href="/#announcements" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide ">Announcements</Link>
                   <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide ">Contact</Link>
                 </div>
               </div>

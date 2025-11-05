@@ -179,94 +179,109 @@ export default function Home() {
         <br></br>
       </div>
 
-      <div className="ourprojectscontainer w-full">
+      <div className="ourteamcontainer w-full">
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Meet The Team</h1>
-          <div className="grid md:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            <div className="project-item md:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+          <div className="grid xl:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item xl:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>MANAGING DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={400} height={200} alt="Ben" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl pb-5">
+                src="/files/enactus_team/ben.png" width={400} height={200} alt="Ben" className="block w-[200px] md:w-[250px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
                 <h1>BEN SIMPSON</h1>
               </div>
-              <p className="pb-5" ></p>
+              <div className="font-extrabold text-xl">
+                <h1>BA Business Management</h1>
+              </div>
+              <p className="pb-5" >The Managing Director ensures the smooth running of Enactus, chairs the meetings, assists all members in their day to day needs and reviews policy and governance decisions.</p>
             </div>
           </div>
-          <div className="grid md:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>PUBLIC RELATIONS DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Jiunn" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl pb-5">
+                src="/files/enactus_team/jiunn.jpg" width={300} height={200} alt="Jiunn" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
                 <h1>WEN JIUNN LOH</h1>
               </div>
-              <p className="pb-5" ></p>
+              <div className="font-extrabold text-xl">
+                <h1>MEng Electrical and Electronic Engineering</h1>
+              </div>
+              <p className="pb-5" >The PR Director role is responsible for the outreach of the team, focusing on social media engagement and promoting projects within Enactus Sheffield. The role includes organising a team of passionate individuals in marketing, creating media content and spreading the word of Enactus Sheffield together.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>HUMAN RESOURCES DIRECTOR</h1>
               </div>
               <Image
                 src="/files/enactus_team/danica.jpg" width={400} height={200} alt="Danica" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl pb-5">
+              <div className="font-extrabold text-xl pb-5">
                 <h1>DANICA BAUTISTA</h1>
               </div>
-              <div className="font-extrabold text-2xl">
+              <div className="font-extrabold text-xl">
                 <h1>BA Business Management</h1>
               </div>
               <p className="pb-5" >The Human Resources Director is responsible for training members by handling inductions, facilitating handovers and, if necessary, conducting disciplinaries such as performance reviews, follow-up meetings, and/or dismissals. They are there to ensure members are well supported in order to achieve performance targets within Enactus Sheffield.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>FINANCE DIRECTOR</h1>
               </div>
               <Image
                 src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Elena" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl pb-5">
+              <div className="font-extrabold text-xl pb-5">
                 <h1>ELENA BOITAN</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>BA Business Management with Economics</h1>
               </div>
               <p className="pb-5" ></p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>IT DIRECTOR</h1>
               </div>
               <Image
                 src="/files/enactus_team/niall.png" width={300} height={200} alt="Niall" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl pb-5">
+              <div className="font-extrabold text-xl pb-5">
                 <h1>NIALL DODDS</h1>
               </div>
-              <div className="font-extrabold text-2xl">
+              <div className="font-extrabold text-xl">
                 <h1>MComp Computer Science</h1>
               </div>
-              <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge{"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it&apos;s the IT director&apos;s job to help.</p>
+              <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge {"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it&apos;s the IT director&apos;s job to help.</p>
             </div>
           </div>
-          <div className="grid md:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            <div className="project-item md:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item xl:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Suzy" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl pb-5">
+                src="/files/enactus_team/suzy.jpg" width={300} height={200} alt="Suzy" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
                 <h1>SUZY JOLLIFF</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>BA Korean Studies with Japanese</h1>
               </div>
               <p className="pb-5" ></p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>CODECREATORS PROJECT LEADER</h1>
               </div>
               <Image
-                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Oliver" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
-              <div className="font-extrabold text-2xl pb-5">
+                src="/files/enactus_team/oli.png" width={300} height={200} alt="Oliver" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
                 <h1>OLIVER GOODWIN-DAY</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>MComp Computer Science</h1>
               </div>
               <p className="pb-5" ></p>
             </div>
@@ -275,7 +290,7 @@ export default function Home() {
         <br></br>
       </div>
 
-      <div className="ourprojectscontainer w-full bg-yellow-400">
+      <div id="announcements" className="announcementcontainer w-full bg-yellow-400">
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Announcements</h1>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
