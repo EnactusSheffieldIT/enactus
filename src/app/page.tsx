@@ -187,7 +187,7 @@ export default function Home() {
                 <h1>MANAGING DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus_team/ben.png" width={400} height={200} alt="Ben" className="block w-[400px] xl:w-[250px] rounded-xl"></Image>
+                src="/files/enactus_team/ben.png" width={200} height={200} alt="Ben" className="block w-[200px] xl:w-[240px] rounded-xl"></Image>
               <div className="font-extrabold text-xl pb-5">
                 <h1>BEN SIMPSON</h1>
               </div>
