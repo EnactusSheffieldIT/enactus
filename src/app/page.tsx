@@ -293,6 +293,15 @@ export default function Home() {
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Announcements</h1>
           <div className="max-h-[500px] overflow-y-auto mt-10 mb-10 space-y-10">
+              
+            <div className="grid :grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+              <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+                <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                  <h1>ENACTUS SHEFFIELD PROJECT COMPETITION</h1>
+                </div>
+                <p className="pb-5" >Have a great idea to impact your local community? Present it on the 26th of November at our weekly meeting. You could get £250 assigned to your project and bring it to life!</p>
+              </div>
+            </div>
 
             <div className="grid :grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
               <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
