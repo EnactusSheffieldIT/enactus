@@ -187,7 +187,7 @@ export default function Home() {
                 <h1>MANAGING DIRECTOR</h1>
               </div>
               <Image
-                src="/files/enactus_team/ben.png" width={200} height={200} alt="Ben" className="block w-[200px] xl:w-[240px] rounded-xl"></Image>
+                src="/files/enactus_team/ben.png" width={200} height={200} alt="Ben" className="block w-[200px] md:w-[400px]  rounded-xl"></Image>
               <div className="font-extrabold text-xl pb-5">
                 <h1>BEN SIMPSON</h1>
               </div>
@@ -268,7 +268,7 @@ export default function Home() {
               <div className="font-extrabold text-xl">
                 <h1>BA Korean Studies with Japanese</h1>
               </div>
-              <p className="pb-5" ></p>
+              <p className="pb-5" >The Intellect Interpreters Project Leader is responsible for partnering up with organisations to provide interpretation services for asylum seekers. This role includes promoting the project, recruiting project members, and overseeing a team of interpreters.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
@@ -282,7 +282,7 @@ export default function Home() {
               <div className="font-extrabold text-xl">
                 <h1>MComp Computer Science</h1>
               </div>
-              <p className="pb-5" ></p>
+              <p className="pb-5" >CodeCreators project lead is responsible for planning sessions to be delivered to students, as well as a managing a team of mentors to assist with the teaching of classes.</p>
             </div>
           </div>
         </div>
