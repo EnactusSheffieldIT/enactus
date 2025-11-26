@@ -160,9 +160,9 @@ export default function Home() {
             <div className="project-item bg-red-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
                 src="/files/carte/carte-no-bg.png" width={400} height={200} alt="Carte" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
+              <a href="/carte" className="font-extrabold text-3xl border-b-2 m-5 border-red-500 hover:tracking-wide hover:text-red-300">
                 <h1>CARTE</h1>
-              </div>
+              </a>
               <p className="pb-5">One of our other local impact projects, Carte, is a card manufacturing project, selling cards designed by members of local learning disability charities and community centres, raising money for those charities. Working with local charities such as Mencap, Keyring and Sheffield Voices, we seek to sell cards and tote bags in local markets and online to raise money for our local Sheffield charity partners.</p>
             </div>
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
@@ -182,7 +182,7 @@ export default function Home() {
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Meet The Team</h1>
           <div className="grid xl:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            <div className="project-item xl:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+            <div className="project-item xl:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>MANAGING DIRECTOR</h1>
               </div>
@@ -293,13 +293,22 @@ export default function Home() {
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Announcements</h1>
           <div className="max-h-[500px] overflow-y-auto mt-10 mb-10 space-y-10">
-              
+            
+            <div className="grid :grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+              <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+                <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                  <h1>WE&apos;RE AT MOOR MARKET SOON!</h1>
+                </div>
+                <p className="pb-5" >We&apos;ll be at the Moor market from December selling cards for Carte. Come down and say hi!</p>
+              </div>
+            </div>
+
             <div className="grid :grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
               <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
                 <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                   <h1>ENACTUS SHEFFIELD PROJECT COMPETITION</h1>
                 </div>
-                <p className="pb-5" >Have a great idea to impact your local community? Present it on the 26th of November at our weekly meeting. You could get £250 assigned to your project and bring it to life!</p>
+                <p className="pb-5" >Have a great idea to impact your local community? Present it on the 3rd of December at our weekly meeting. You could get £250 assigned to your project and bring it to life!</p>
               </div>
             </div>
 
