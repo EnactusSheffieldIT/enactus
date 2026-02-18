@@ -59,10 +59,7 @@ export default function Home() {
               <b>Week 6:</b> Libraries and Modules - Built into Python
             </li>
             <li>
-              <b>Week 7:</b> NumPy - Basics and Uses
-            </li>
-            <li>
-              <b>Week 8:</b> MatPlotLib - Basics and Uses
+              <b>Week 7:</b> NumPy + MatPlotLib - Basics and Uses
             </li>
           </ul>
         </div>
@@ -83,16 +80,16 @@ export default function Home() {
       {/* Pricing and Registration Section */}
       <section className="bg-blue-100 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-semibold">Interested in Applying?</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold">Interested in Joining?</h2>
           <p className="text-lg text-gray-700">
             The total cost is <b>£25 per person</b>. Apply with a friend and get £5 off each, making it <b>£20 per
             person</b>!
           </p>
           <p className="text-lg text-gray-700">
-            Fill out the form below to register your interest, and we&apos;ll get back to you with payment information:
+            Fill out the form below to register your interest, and we&apos;ll get back to you with more information:
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSffIk6xtrt2l3PDNPSQiJdqi-qFzU6hU5s74HXdBty4vqnBzQ/viewform?usp=sf_link"
+            href="https://forms.gle/Smv7LzegU2sJsMNm8"
             className="inline-block px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
           >
             Apply Now
@@ -106,15 +103,15 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-semibold text-center">Meet the Team</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-8">
             <div className="text-center">
-              <Image
+            <Image
                 width={100}
                 height={100}
-                src="/files/codecreators/niall.jpg"
-                alt="Niall"
-                className="w-32 h-32 rounded-full object-cover mx-auto"
+                src="/files/codecreators/cc-logo.png"
+                alt="Ian"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
               />
-              <p className="mt-4 font-semibold">Niall</p>
-              <p className="text-gray-600">Project Leader</p>
+              <p className="mt-4 font-semibold">Ajitha</p>
+              <p className="text-gray-600">Mentor</p>
             </div>
             <div className="text-center">
             <Image
@@ -122,20 +119,20 @@ export default function Home() {
                 height={100}
                 src="/files/codecreators/oli.jpg"
                 alt="Oli"
-                className="w-32 h-32 rounded-full object-cover mx-auto"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
               />
               <p className="mt-4 font-semibold">Oli</p>
-              <p className="text-gray-600">Mentor</p>
+              <p className="text-gray-600">Project Lead</p>
             </div>
             <div className="text-center">
             <Image
                 width={100}
                 height={100}
-                src="/files/codecreators/ian.jpg"
+                src="/files/codecreators/vivan.png?"
                 alt="Ian"
-                className="w-32 h-32 rounded-full object-cover mx-auto"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
               />
-              <p className="mt-4 font-semibold">Ian</p>
+              <p className="mt-4 font-semibold">Vivan</p>
               <p className="text-gray-600">Mentor</p>
             </div>
           </div>
