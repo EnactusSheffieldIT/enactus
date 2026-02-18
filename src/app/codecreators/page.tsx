@@ -106,17 +106,6 @@ export default function Home() {
             <Image
                 width={100}
                 height={100}
-                src="/files/codecreators/cc-logo.png"
-                alt="Ian"
-                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
-              />
-              <p className="mt-4 font-semibold">Ajitha</p>
-              <p className="text-gray-600">Mentor</p>
-            </div>
-            <div className="text-center">
-            <Image
-                width={100}
-                height={100}
                 src="/files/codecreators/oli.jpg"
                 alt="Oli"
                 className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
@@ -128,11 +117,33 @@ export default function Home() {
             <Image
                 width={100}
                 height={100}
-                src="/files/codecreators/vivan.png?"
-                alt="Ian"
+                src="/files/codecreators/cc-logo.png"
+                alt="Ajitha"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Ajitha</p>
+              <p className="text-gray-600">Mentor</p>
+            </div>
+            <div className="text-center">
+            <Image
+                width={100}
+                height={100}
+                src="/files/codecreators/vivan.png"
+                alt="Vivan"
                 className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
               />
               <p className="mt-4 font-semibold">Vivan</p>
+              <p className="text-gray-600">Mentor</p>
+            </div>
+            <div className="text-center">
+            <Image
+                width={100}
+                height={100}
+                src="/files/codecreators/cc-logo.png"
+                alt="Ayush"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Ayush</p>
               <p className="text-gray-600">Mentor</p>
             </div>
           </div>
