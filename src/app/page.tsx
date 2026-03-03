@@ -142,17 +142,17 @@ export default function Home() {
             <div className="project-item bg-blue-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
                 src="/files/codecreators/cc-logo-no-bg.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
+              <a href="/codecreators" className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
                 <h1>CODECREATORS</h1>
-              </div>
+              </a>
               <p className="pb-5" >Our commercial project, CodeCreators, is a student run IT & Coding Class, targeting students and university staff to increase digital literacy and coding in languages such as Python and Google Sheets. Running since 2017, we have raised thousands of pounds towards Enactus initiatives, and looking to expand to directly supporting charities in the coming year.</p>
             </div>
             <div className="project-item bg-yellow-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
               <Image
                 src="/files/rivelin_marketing/rivelin_marketing.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
+              <a href="/rivelinmarketing" className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
                 <h1>RIVELIN MARKETING</h1>
-              </div>
+              </a>
               <p className="pb-5" >Our in-house marketing team Rivelin Marketing markets all of our projects online, such as on Instagram or LinkedIn, to raise awareness of our projects and our members achievements. </p>
             </div>
           </div>
@@ -297,6 +297,15 @@ export default function Home() {
             <div className="grid :grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
               <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
                 <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                  <h1>WE&apos;RE ACTIVELY RECRUITING FOR THE 2026/2027 SEASON</h1>
+                </div>
+                <p className="pb-5" >Enactus Sheffield are currently recruiting for 2026/2027 executive roles. Think you have the skills? Apply now!</p>
+              </div>
+            </div>
+
+            <div className="grid :grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+              <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
+                <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                   <h1>WE&apos;RE AT MOOR MARKET SOON!</h1>
                 </div>
                 <p className="pb-5" >We&apos;ll be at the Moor market from December selling cards for Carte. Come down and say hi!</p>
@@ -308,7 +317,7 @@ export default function Home() {
                 <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                   <h1>ENACTUS SHEFFIELD PROJECT COMPETITION</h1>
                 </div>
-                <p className="pb-5" >Have a great idea to impact your local community? Present it on the 3rd of December at our weekly meeting. You could get £250 assigned to your project and bring it to life!</p>
+                <p className="pb-5" >Have a great idea to impact your local community? Present it on the 3rd of December 2025 at our weekly meeting. You could get £250 assigned to your project and bring it to life!</p>
               </div>
             </div>
 
