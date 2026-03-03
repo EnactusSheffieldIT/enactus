@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header Section */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-blue-600">
-          Blades and Brands
+          Rivelin Marketing
         </h1>
         <p className="mt-4 text-lg text-gray-600">
           Empowering small & medium-sized businesses, societies, and associations with affordable social media management services.

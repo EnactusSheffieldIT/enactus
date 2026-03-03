@@ -149,11 +149,11 @@ export default function Home() {
             </div>
             <div className="project-item bg-yellow-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
               <Image
-                src="/files/Blades&Brands-no-bg.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/rivelin_marketing/rivelin_marketing.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
               <div className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
-                <h1>BLADES AND BRANDS</h1>
+                <h1>RIVELIN MARKETING</h1>
               </div>
-              <p className="pb-5" >Our in-house marketing team, currently called Blades and Brands, markets all of our projects online, such as on Instagram or LinkedIn, to raise awareness of our projects and our members achievements. </p>
+              <p className="pb-5" >Our in-house marketing team Rivelin Marketing markets all of our projects online, such as on Instagram or LinkedIn, to raise awareness of our projects and our members achievements. </p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">

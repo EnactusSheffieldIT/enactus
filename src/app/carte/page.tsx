@@ -10,7 +10,7 @@ export default function Home() {
                     className="text-center" alt="carte logo capitals transparent background.png" />
 
 
-                <h2 id="who-we-are" className="text-4xl">Who We Exist</h2>
+                <h2 id="who-we-are" className="text-4xl">Who We Are</h2>
                 <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
 
                 We are Carte, a student-run social enterprise within Enactus Sheffield. Our team brings together students from a wide range of disciplines who share a common goal: creating meaningful, lasting impact in the lives of people with learning disabilities. We combine creativity, community engagement, and social entrepreneurship to drive positive change.
@@ -43,23 +43,14 @@ export default function Home() {
 
                 <h2 className="text-4xl">Meet The Carte Team</h2>
                 <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
-                <div className="grid xl:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-                    <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
-                        <Image src="/files/carte/ben.png" width={200} height={150} alt="Ben" className="block w-[200px] md:w-[400px]  rounded-xl"></Image>
-                        <div className="font-extrabold text-xl">
-                            <h1>Ben Simpson</h1>
-                        </div>
-                        <div className="text-xl">
-                            <h1>Product Developer</h1>
-                        </div>
-                    </div>
+                <div className="grid xl:grid-cols-1 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
                     <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
                         <Image src="/files/carte/virthi.png" width={200} height={150} alt="Ben" className="block w-[200px] md:w-[400px]  rounded-xl"></Image>
                         <div className="font-extrabold text-xl">
                             <h1>Virthi Murali</h1>
                         </div>
                         <div className="text-xl">
-                            <h1>Product Developer</h1>
+                            <h1>Project Leader</h1>
                         </div>
                     </div>
                 </div>
