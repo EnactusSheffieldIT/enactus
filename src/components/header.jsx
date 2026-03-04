@@ -28,7 +28,7 @@ export default function Home() {
          
           <h2 className="ml-5 text-sm">University of Sheffield</h2>
           </Link>
-          <div className="flex 2xl:hidden basis-auto">
+          <div className="flex xl:hidden basis-auto">
             <button onClick={toggleNavbar}>
               {isClick ? (
                 <Image src="/main/cross.svg" width={47} height={47} alt="menu"></Image>
@@ -37,12 +37,12 @@ export default function Home() {
               )}
             </button>
           </div>
-          <div className="menulink  mt-5 hidden 2xl:inline">
+          <div className="menulink  mt-5 hidden xl:inline">
 
-            <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl ">About</Link>
+            <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-xl 2xl:text-2xl">About</Link>
             
             <div className="dropdown">
-              <Link href="/#project" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl ">Projects
+              <Link href="/#project" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-xl 2xl:text-2xl">Projects
               <Image src="/main/hamburger.svg" width={25} height={25} alt="menu" className="inline ml-2"></Image></Link>
               <div className="dropdown-content bg-gray-800 text-white">
                 <Link href="/codecreators">CodeCreators</Link>
@@ -51,9 +51,9 @@ export default function Home() {
                 <Link href="/rivelinmarketing">Rivelin Marketing</Link>
               </div>
             </div>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl" target="_blank">Apply Now</Link>
-            <Link href="/#announcements" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Announcements</Link>
-            <Link href="/#contact" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Contact</Link>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-xl 2xl:text-2xl" target="_blank">Apply Now</Link>
+            <Link href="/#announcements" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-xl 2xl:text-2xl">Announcements</Link>
+            <Link href="/#contact" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-xl 2xl:text-2xl">Contact</Link>
           </div>
           <div className="">
               <div className="flex flex-row text-white">
@@ -71,7 +71,7 @@ export default function Home() {
          
         </header>
      
-        <div className={`  2xl:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
+        <div className={`  xl:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
           {isClick && (
             <>
               <div className="block !bg-gray-950 pt-3">
