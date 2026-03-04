@@ -9,8 +9,9 @@ export default function Home() {
         <div className="bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <header className="text-center py-16 bg-white shadow-sm">
+        <Image width={500} height={400} src="/files/codecreators/cc-logo-short.png"
+          className="text-center mx-auto" alt="carte logo capitals transparent background.png" />
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-600">Welcome to CodeCreators</h1>
           <p className="mt-4 text-lg md:text-xl text-gray-600">
             Teaching Vital Programming Skills to Empower Your Future
           </p>

@@ -56,8 +56,8 @@ export default function Home() {
       <main className="text-black overflow-hidden">
       {/* bg-yellow-50  */}
       <div className="containcontainerhero bg-[url('/main/hero-award.jpg')] w-full bg-no-repeat bg-cover min-h-[100vh] md:h-[700px] relative flex justify-center items-center">
-        <div className="containerhero w-full bg-black/70 min-h-[100vh] md:h-[600px] h-full flex flex-col items-center p-5 md:p-0 relative justify-start ">
-          <h1 className="text-3xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[90%] mt-32 lg:mt-44 hero-introduction uppercase md:p-10 flex flex-col">
+        <div className="containerhero w-full bg-black/70 min-h-[100vh] md:h-[700px] h-full flex flex-col items-center md:p-0 relative justify-start ">
+          <h1 className="text-3xl md:text-6xl text-white font-extrabold md:leading-[80px] w-[90%] mt-32 lg:mt-44 hero-introduction uppercase p-10 flex flex-col">
             Enactus Sheffield:{" "}
             <div className="inline">
               <Typewriter
@@ -81,13 +81,13 @@ export default function Home() {
               />
             </div>
           </h1>
-          <Link
+          {/* <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog"
             className="sm:mt-8 border-2 p-3 text-center hover:bg-white hover:text-black border-white text-white text-xl sm:text-3xl font-extrabold absolute bottom-20"
             target="_blank"
           >
             We are currently looking for new members: <br></br> CLICK HERE TO REGISTER NOW!
-          </Link>
+          </Link> */}
         </div>
 
         {/* Add the wave divider and partner section */}
@@ -141,7 +141,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-blue-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
-                src="/files/codecreators/cc-logo-no-bg.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/codecreators/cc-logo-no-bg.png" width={300} height={200} alt="CodeCreators" className="block w-[200px] md:w-[525px]"></Image>
               <a href="/codecreators" className="font-extrabold text-3xl border-b-2 m-5 border-blue-500 hover:tracking-wide hover:text-blue-300">
                 <h1>CODECREATORS</h1>
               </a>

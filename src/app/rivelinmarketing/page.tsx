@@ -1,5 +1,6 @@
 import Head from "../../components/header"
 import Footer from "../../components/footer"
+import Image from 'next/image'
 export default function Home() {
     return (
         <>  
@@ -7,10 +8,12 @@ export default function Home() {
         <div className="bg-gray-50 min-h-screen flex flex-col items-center px-6 py-12">
       {/* Header Section */}
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-blue-600">
+        <Image width={400} height={400} src="/files/rivelinmarketing/rivelinmarketingshort.png"
+          className="text-center mx-auto" alt="carte logo capitals transparent background.png" />
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-600 pt-10">
           Rivelin Marketing
         </h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg md:text-xl text-gray-600">
           Empowering small & medium-sized businesses, societies, and associations with affordable social media management services.
         </p>
       </header>
@@ -40,6 +43,25 @@ export default function Home() {
       <section className="bg-blue-100 shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12 text-center">
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Tagline</h2>
         <p className="text-lg text-gray-700 italic">&#34;Empowering connections, one platform at a time.&#34;</p>
+      </section>
+
+      <section className="bg-white shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12 text-center">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center">Meet the Team</h2>
+          <div className="mt-8 flex flex-wrap justify-center gap-8">
+            <div className="text-center">
+              <Image
+                width={100}
+                height={100}
+                src="/files/rivelinmarketing/jiunn.jpg"
+                alt="Jiunn"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Juinn</p>
+              <p className="text-blue-600">Project Leader</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Contact Section */}

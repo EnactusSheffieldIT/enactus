@@ -41,17 +41,16 @@ export default function Home() {
 
             <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl ">About</Link>
             
-            {/* <div className="dropdown">
-              <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn">Team
+            <div className="dropdown">
+              <Link href="/#project" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl ">Projects
               <Image src="/main/hamburger.svg" width={25} height={25} alt="menu" className="inline ml-2"></Image></Link>
               <div className="dropdown-content bg-gray-800 text-white">
-                <Link href="/rivelinmarketing">Rivelin Marketing</Link>
                 <Link href="/codecreators">CodeCreators</Link>
                 <Link href="/carte">Carte</Link>
-                <Link href="/intellectinterpreters">Intellect Interpreters</Link>
+                {/* <Link href="/intellectinterpreters">Intellect Interpreters</Link> */}
                 <Link href="/rivelinmarketing">Rivelin Marketing</Link>
               </div>
-            </div> */}
+            </div>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl" target="_blank">Apply Now</Link>
             <Link href="/#announcements" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Announcements</Link>
             <Link href="/#contact" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl">Contact</Link>
@@ -78,11 +77,11 @@ export default function Home() {
               <div className="block !bg-gray-950 pt-3">
                 <div className="menulink mt-10 [&>*]:block pt-8" >
                   <Link href="/#about" className="pt-2 border-t-2 m-2 border-teal-300 hover:tracking-wide pl-2 pb-2">About</Link>
-                    {/* <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Team</Link>
+                    <Link href="/#project" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide dropbtn  ">Projects</Link>
                       <Link className="ml-5 p-2" href="/codecreators/#">CodeCreators</Link>
                       <Link className="ml-5 p-2" href="/carte/#">Carte</Link>
-                      <Link className="ml-5 p-2" href="/ii/#">Intellect interpreters</Link>
-                      <Link className="ml-5 p-2" href="/rivelinmarketing/#">Rivelin Marketing</Link> */}
+                      {/* <Link className="ml-5 p-2" href="/ii/#">Intellect Interpreters</Link> */}
+                      <Link className="ml-5 p-2" href="/rivelinmarketing/#">Rivelin Marketing</Link>
                   <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide" target="_blank">Apply Now</Link>
                   <Link href="/#announcements" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide ">Announcements</Link>
                   <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide ">Contact</Link>
