@@ -149,7 +149,7 @@ export default function Home() {
             </div>
             <div className="project-item bg-yellow-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50 ">
               <Image
-                src="/files/rivelin_marketing/rivelin_marketing.png" width={400} height={200} alt="Blades and Brands" className="block w-[200px] md:w-[400px]"></Image>
+                src="/files/rivelinmarketing/rivelinmarketing.png" width={400} height={200} alt="Rivelin Marketing" className="block w-[200px] md:w-[400px]"></Image>
               <a href="/rivelinmarketing" className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
                 <h1>RIVELIN MARKETING</h1>
               </a>
