@@ -14,7 +14,7 @@ export default function Home() {
     return (
       <>
         <header className={`flex flex-row justify-evenly items-center bg-transparent text-white top-0 z-30 whitetoyellow absolute w-[100%] ${isClick == true || pathname != "/"?"!bg-black": ""}  ${pathname != "/"?"!relative": ""}`}>
-          <Link href="/" className="flex flex-col xl:my-5 mt-2">
+          <Link href="/" className="flex flex-col xl:my-5 mt-3">
           <Image
           // layout="responsive"
             src="/main/logo.png"
@@ -28,7 +28,7 @@ export default function Home() {
          
           <h2 className="ml-5 text-sm">University of Sheffield</h2>
           </Link>
-          <div className="flex xl:hidden basis-auto">
+          <div className="flex 2xl:hidden basis-auto">
             <button onClick={toggleNavbar}>
               {isClick ? (
                 <Image src="/main/cross.svg" width={47} height={47} alt="menu"></Image>
@@ -37,7 +37,7 @@ export default function Home() {
               )}
             </button>
           </div>
-          <div className="menulink  mt-5 hidden xl:inline">
+          <div className="menulink  mt-5 hidden 2xl:inline">
 
             <Link href="/#about" className="p-2 border-t-2 m-10 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl ">About</Link>
             
@@ -71,7 +71,7 @@ export default function Home() {
          
         </header>
      
-        <div className={`  xl:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
+        <div className={`  2xl:hidden  !text-white z-20 relative ${pathname != "/"?"": "!top-[60px]"}  `}> 
           {isClick && (
             <>
               <div className="block !bg-gray-950 pt-3">
