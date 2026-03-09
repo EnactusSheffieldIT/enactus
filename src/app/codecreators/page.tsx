@@ -92,6 +92,7 @@ export default function Home() {
           <a
             href="https://forms.gle/Smv7LzegU2sJsMNm8"
             className="inline-block px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+            target="_blank"
           >
             Apply Now
           </a>
@@ -162,6 +163,7 @@ export default function Home() {
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSemATAJYLAYbaPfRcX6AbJecSEwqRwyvpvQCZ0fm6VWUa0XbQ/viewform?usp=sf_link"
             className="inline-block px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+            target="_blank"
           >
             Join the Team
           </a>
