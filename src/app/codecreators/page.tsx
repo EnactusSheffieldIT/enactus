@@ -38,7 +38,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-center">Course Layout</h2>
           <p className="text-center text-lg text-gray-700 mt-4">
-            The course runs weekly starting February 26th, 2025, every Wednesday from 2 PM to 3:30 PM.
+            The course runs weekly starting the 4th of March 2025, every Wednesday from 2 PM to 3:30 PM.
           </p>
           <ul className="mt-8 space-y-4 text-gray-700 text-lg">
             <li>
