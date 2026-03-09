@@ -57,7 +57,7 @@ export default function Home() {
                 alt="Jiunn"
                 className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
               />
-              <p className="mt-4 font-semibold">Juinn</p>
+              <p className="mt-4 font-semibold">Jiunn</p>
               <p className="text-blue-600">Project Leader</p>
             </div>
           </div>
