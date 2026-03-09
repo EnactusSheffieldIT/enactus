@@ -10,9 +10,6 @@ export default function Home() {
       <header className="text-center mb-12">
         <Image width={400} height={400} src="/files/rivelinmarketing/rivelinmarketingshort.png"
           className="text-center mx-auto" alt="carte logo capitals transparent background.png" />
-        <h1 className="text-4xl md:text-6xl font-bold text-blue-600 pt-10">
-          Rivelin Marketing
-        </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-600">
           Empowering small & medium-sized businesses, societies, and associations with affordable social media management services.
         </p>
