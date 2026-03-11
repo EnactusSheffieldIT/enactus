@@ -77,7 +77,7 @@ export default function Home() {
             Join us in bridging language barriers and empowering communities. Whether you&#39;re a student looking for practical experience or a community leader seeking support for those in need, our service is here to help.
           </p>
           <a
-            href="mailto:Sabbasi4@Sheffield.ac.uk"
+            href="mailto:sjollif1@Sheffield.ac.uk"
             className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-blue-700 transition duration-300"
           >
             Get in Touch
