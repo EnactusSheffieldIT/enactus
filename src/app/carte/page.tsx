@@ -7,18 +7,24 @@ export default function Home() {
             <Head></Head>
             <div className="bg-gray-50 text-gray-800">
                 <div className="[&>*]:mx-auto text-center max-w-[700px] mx-auto">
-                    <Image width={400} height={400} src="/files/carte/carte-no-bg-bigger.png"
+                    <Image width={400} height={400} src="/files/carte/carte-no-bg-smaller.png"
                         className="text-center" alt="carte logo capitals transparent background.png" />
-
-
-                    <h2 id="who-we-are" className="text-4xl font-semibold">Who We Are</h2>
-                    <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
-
-                    We are Carte, a student-run social enterprise within Enactus Sheffield. Our team brings together students from a wide range of disciplines who share a common goal: creating meaningful, lasting impact in the lives of people with learning disabilities. We combine creativity, community engagement, and social entrepreneurship to drive positive change.
-                    <br></br><br></br>
+                    <p className="mt-4 text-lg md:text-xl text-gray-600 pb-5">
+                        From your hands to their hearts, spreading the power of cards.
+                    </p>
                 </div>
 
                 <section className="bg-yellow-50 py-16 px-4">
+                    <div className="[&>*]:mx-auto text-center max-w-[700px] mx-auto">
+                        <h2 id="who-we-are" className="text-4xl font-semibold">Who We Are</h2>
+                        <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
+
+                        We are Carte, a student-run social enterprise within Enactus Sheffield. Our team brings together students from a wide range of disciplines who share a common goal: creating meaningful, lasting impact in the lives of people with learning disabilities. We combine creativity, community engagement, and social entrepreneurship to drive positive change.
+                        <br></br><br></br>
+                    </div>
+                </section>
+
+                <section className="bg-gray-50 py-16 px-4">
                     <div className="[&>*]:mx-auto text-center max-w-[700px] mx-auto">
                         <h2 id="why-we-are" className="text-4xl font-semibold">Why We Exist</h2>
                         <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
@@ -41,7 +47,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="bg-gray-50 py-16 px-4">
+                <section className="bg-yellow-50 py-16 px-4">
                     <div className="[&>*]:mx-auto text-center max-w-[700px] mx-auto">
                     <h2 id="our-mission" className="text-4xl font-semibold">What We Do</h2>
                     <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
@@ -53,7 +59,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="bg-yellow-50 py-16 px-4">
+                <section className="bg-gray-50 py-16 px-4">
                     <div className="[&>*]:mx-auto text-center max-w-[700px] mx-auto">
                         <h2 className="text-4xl font-semibold">Meet The Carte Team</h2>
                         <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
