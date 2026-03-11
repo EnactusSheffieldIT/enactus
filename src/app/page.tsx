@@ -168,9 +168,9 @@ export default function Home() {
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
                 src="/files/intellectinterpreters/ii.png" width={400} height={200} alt="Intellect interpreters" className="block w-[200px] md:w-[400px] p-8 md:p-11"></Image>
-              <div className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
+              <a href="/intellectinterpreters" className="font-extrabold text-3xl border-b-2 m-5 border-black hover:tracking-wide hover:text-gray-400">
                 <h1>INTELLECT INTERPRETERS</h1>
-              </div>
+              </a>
               <p className="pb-5">One of our local impact projects, Intellect Interpreters, is a volunteering based project that provides free translation services for asylum seekers in the city of Sheffield. Working closely with the city of Sanctuary, a Sheffield Charity, our volunteers help with translation and interpretation at sessions during the week, as well as looking to find new ways to assist the charity though fundraising methods.</p>
             </div>
           </div>
@@ -242,6 +242,20 @@ export default function Home() {
           <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                <h1>ENGAGEMENT DIRECTOR</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Heather" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
+                <h1>HEATHER SADIQ</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>PHD History</h1>
+              </div>
+              <p className="pb-5">The Engagement Director is responsible for building and maintaining relationships between Enactus Sheffield and local community businesses, partners, and professionals who can support our members through mentoring, guidance, and collaboration. The Engagement Director is a key external-facing representative of Enactus Sheffield and also works closely with internal teams to ensure partnerships are meaningful, mutually beneficial, and aligned with our strategic objectives.</p>
+            </div>
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>IT DIRECTOR</h1>
               </div>
               <Image
@@ -254,7 +268,35 @@ export default function Home() {
               </div>
               <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge {"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it&apos;s the IT director&apos;s job to help.</p>
             </div>
-            <div className="project-item xl:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+            {/* <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                <h1>OPERATIONS DIRECTOR</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Angela" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
+                <h1>ANGELA LE</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>(Placeholder)</h1>
+              </div>
+              <p className="pb-5" >(Placeholder)</p>
+            </div> */}
+            {/* <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                <h1>SOCIAL SECRETARY</h1>
+              </div>
+              <Image
+                src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Su" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
+                <h1>SU HNIN HTET</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>(Placeholder)</h1>
+              </div>
+              <p className="pb-5" >(Placeholder)</p>
+            </div> */}
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>
               </div>
@@ -282,6 +324,64 @@ export default function Home() {
               </div>
               <p className="pb-5" >CodeCreators project lead is responsible for planning sessions to be delivered to students, as well as a managing a team of mentors to assist with the teaching of classes.</p>
             </div>
+          </div>
+          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            {/* <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>
+              </div>
+              <Image
+                src="/files/enactus_team/suzy.jpg" width={300} height={200} alt="Suzy" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
+                <h1>SUZY JOLLIFF</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>BA Korean Studies with Japanese</h1>
+              </div>
+              <p className="pb-5" >The Intellect Interpreters Project Leader is responsible for partnering up with organisations to provide interpretation services for asylum seekers. This role includes promoting the project, recruiting project members, and overseeing a team of interpreters.</p>
+            </div>
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                <h1>CODECREATORS PROJECT LEADER</h1>
+              </div>
+              <Image
+                src="/files/enactus_team/oli.png" width={300} height={200} alt="Oliver" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
+                <h1>OLIVER GOODWIN-DAY</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>MComp Computer Science</h1>
+              </div>
+              <p className="pb-5" >CodeCreators project lead is responsible for planning sessions to be delivered to students, as well as a managing a team of mentors to assist with the teaching of classes.</p>
+            </div> */}
+            {/* <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                <h1>CARTE PROJECT LEADER</h1>
+              </div>
+              <Image
+                src="/files/carte/vivi.png" width={300} height={200} alt="Vivi" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
+                <h1>VIVI MURALI</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>(Placeholder)</h1>
+              </div>
+              <p className="pb-5" >(Placeholder)</p>
+            </div> */}
+            {/* <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
+                <h1>JUST PROJECT LEADER</h1>
+              </div>
+              <Image
+                src="/files/intellectinterpreters/khushi.jpg" width={300} height={200} alt="Khushi" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
+              <div className="font-extrabold text-xl pb-5">
+                <h1>KHUSHI KARSAN</h1>
+              </div>
+              <div className="font-extrabold text-xl">
+                <h1>MA Law (Conversion)</h1>
+              </div>
+              <p className="pb-5" >(Placeholder)</p>
+            </div> */}
           </div>
         </div>
         <br></br>

@@ -1,49 +1,25 @@
 import Head from "../../components/header"
 import Footer from "../../components/footer"
+import Image from 'next/image'
 export default function Home() {
     return (
         <>  
         <Head></Head>
         <div className="min-h-screen bg-white text-gray-900 font-sans">
-      {/* Header */}
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <h1 className="text-3xl font-bold text-center">Intellect Interpreters</h1>
-        </div>
-      </header>
 
       {/* Hero Section */}
-      <section className="bg-gray-50 py-20">
+      <section className="py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-extrabold mb-6">
-            Bridging Language & Community
-          </h2>
-          <p className="text-xl text-gray-700">
+          <Image width={300} height={300} src="/files/intellectinterpreters/ii.png"
+            className="text-center mx-auto" alt="carte logo capitals transparent background.png" />
+          <p className="text-xl text-gray-700 pt-5">
             Enhancing communication for refugees through student-led interpreting services while fostering cultural sensitivity, trust, and community integration.
           </p>
         </div>
       </section>
 
-      {/* About Section */}
-      {/* <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-2xl font-bold mb-4">A Little Bit About Me</h3>
-          <p className="mb-6 text-lg leading-relaxed">
-            My name is Shahrzad, a final-year medical student at the University of Sheffield.
-            I began my interpreting journey at the age of 10 by helping my parents with letters,
-            appointments, and paperwork. My early experiences have shaped me into a reliable and versatile interpreter,
-            with expertise in social services, immigration, and psychological assessments.
-          </p>
-          <p className="mb-6 text-lg leading-relaxed">
-            My background not only enables me to offer professional and confidential interpreting services but also
-            to understand the diverse needs of the people I serve – from refugees overcoming language barriers to students
-            looking to gain practical experience.
-          </p>
-        </div>
-      </section> */}
-
       {/* Value Proposition Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-100 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-2xl font-bold text-center mb-10">Innovation & Value Proposition</h3>
           <div className="grid gap-12 md:grid-cols-2">
@@ -56,7 +32,7 @@ export default function Home() {
             <div className="space-y-4">
               <h4 className="text-xl font-semibold">Specialised Knowledge</h4>
               <p>
-                Professional handling of sensitive settings such as psychological assessments while ensuring confidentiality.
+                Professional handling of sensitive settings while ensuring confidentiality.
               </p>
             </div>
             <div className="space-y-4">
@@ -75,35 +51,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Implementation Plan Section */}
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-2xl font-bold text-center mb-10">Plan for Implementing the Service</h3>
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="bg-gray-100 p-6 rounded-lg shadow">
-              <h4 className="text-xl font-semibold mb-3">July</h4>
-              <p>
-                <strong>Community Service Meetings:</strong> Establish partnerships with community organisations like the City of Sanctuary.
-              </p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow">
-              <h4 className="text-xl font-semibold mb-3">August & September</h4>
-              <p>
-                <strong>Recruit & Train:</strong> Form a volunteer team of student interpreters and conduct essential training on safeguarding, confidentiality, and communication.
-              </p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow">
-              <h4 className="text-xl font-semibold mb-3">October Onwards</h4>
-              <p>
-                <strong>Service Implementation:</strong> Launch the service, begin scheduling interpreting sessions, and gather feedback for continuous improvement.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Financial Plan Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-2xl font-bold text-center mb-8">Financial Plan</h3>
           <ul className="list-disc list-inside space-y-3 text-lg">
@@ -114,9 +63,6 @@ export default function Home() {
               <strong>Student Travel Reimbursement:</strong> Compensate transportation costs for student interpreters.
             </li>
             <li>
-              <strong>Food and Refreshments:</strong> Provide refreshments during training sessions and events to support volunteers.
-            </li>
-            <li>
               <strong>Contingency Fund:</strong> Reserved funds to address any unexpected expenses.
             </li>
           </ul>
@@ -124,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20">
+      <section className="bg-gray-100 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-3xl font-extrabold mb-6">Make a Difference Today</h3>
           <p className="text-lg text-gray-700 mb-8">
@@ -136,6 +82,37 @@ export default function Home() {
           >
             Get in Touch
           </a>
+        </div>
+      </section>
+
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center">Meet the Team</h2>
+          <div className="mt-8 flex flex-wrap justify-center gap-8">
+            <div className="text-center">
+            <Image
+                width={100}
+                height={100}
+                src="/files/enactus_team/suzy.jpg"
+                alt="Oli"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Suzy</p>
+              <p className="text-gray-600">Project Leader</p>
+            </div>
+            <div className="text-center">
+              <Image
+                  width={100}
+                  height={100}
+                  src="/files/intellectinterpreters/khushi.jpg"
+                  alt="Oli"
+                  className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Khushi</p>
+              <p className="text-gray-600">Training and</p>
+              <p className="text-gray-600">Safeguarding Officer</p>
+            </div>
+          </div>
         </div>
       </section>
 

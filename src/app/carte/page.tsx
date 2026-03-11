@@ -59,14 +59,14 @@ export default function Home() {
                         <Image width={100} height={200} src="https://static.wixstatic.com/media/8c34f9_19f4f7c9640e471db9294ef1f2e11d9b~mv2.png/v1/fill/w_262,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7_edited.png" alt="7_edited.png" />
                         <div className="grid xl:grid-cols-1 grid-flow-row mb-10 mt-10 text-center font-">
                             <Image
-                                    width={100}
-                                    height={100}
-                                    src="/files/carte/virthi.png"
-                                    alt="Virthi"
-                                    className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
-                                />
-                                <p className="mt-4 font-semibold">Virthi</p>
-                                <p className="text-yellow-600">Project Leader</p>
+                                width={100}
+                                height={100}
+                                src="/files/carte/vivi.png"
+                                alt="Vivi"
+                                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+                            />
+                            <p className="mt-4 font-semibold">Vivi</p>
+                            <p className="text-yellow-600">Project Leader</p>
                         </div>
                     </div>
                 </section>

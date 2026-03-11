@@ -113,7 +113,7 @@ export default function Home() {
                   className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
                 />
                 <p className="mt-4 font-semibold">Oli</p>
-                <p className="text-gray-600">Project Lead</p>
+                <p className="text-gray-600">Project Leader</p>
               </div>
               <div className="text-center">
               <Image
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
         </footer>
     </div>
-        <Footer></Footer>
-        </>
-    )
+    <Footer></Footer>
+    </>
+  )
 }
