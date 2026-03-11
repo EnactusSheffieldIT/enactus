@@ -181,8 +181,8 @@ export default function Home() {
       <div className="ourteamcontainer w-full">
         <div className="aboutEnactus w-[80%] mx-auto text-xl">
           <h1 className="w-full text-center text-4xl md:text-5xl font-semibold pt-10">Meet The Team</h1>
-          <div className="grid xl:grid-cols-3 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            <div className="project-item xl:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>MANAGING DIRECTOR</h1>
               </div>
@@ -196,8 +196,6 @@ export default function Home() {
               </div>
               <p className="pb-5" >The Managing Director ensures the smooth running of Enactus, chairs the meetings, assists all members in their day to day needs and reviews policy and governance decisions.</p>
             </div>
-          </div>
-          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>PUBLIC RELATIONS DIRECTOR</h1>
@@ -240,6 +238,8 @@ export default function Home() {
               </div>
               <p className="pb-5" >As Finance Director, I ensure the organisation remains financially stable and compliant, providing a solid foundation for projects to thrive and create meaningful community impact. At Enactus, I’m excited to combine my passion for numbers with my commitment to driving positive change - contributing to a community that values sustainable growth and strives to make the world a better place. I couldn’t be happier to be part of it!</p>
             </div>
+          </div>
+          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>IT DIRECTOR</h1>
@@ -254,8 +254,6 @@ export default function Home() {
               </div>
               <p className="pb-5">The IT Director is resposible for all things IT in Enactus Sheffield. This role involes use of both software knowledge {"("}such as website management/coding{")"} as well as hardware knowledge {"("}such as ensuring IT equipment works{")"}. If any project requires IT assistance, it&apos;s the IT director&apos;s job to help.</p>
             </div>
-          </div>
-          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
             <div className="project-item xl:col-start-2 bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>

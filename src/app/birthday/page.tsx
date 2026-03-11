@@ -12,9 +12,9 @@ export default function Home() {
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
-        await loadFull(engine); 
+            await loadFull(engine); 
         }).then(() => {
-        setInit(true);
+            setInit(true);
         });
     }, []);
 
