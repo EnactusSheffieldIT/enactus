@@ -101,7 +101,7 @@ export default function Home() {
         <div className="[&>*]:mx-auto text-center max-w-[700px] mx-auto relative z-10">
             <br></br>
             <h2 className="text-4xl font-semibold">
-                Enactus Sheffield&apos;s (number) Anniversary!
+                Enactus Sheffield&apos;s 20th Anniversary!
             </h2>
             <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         </div>
