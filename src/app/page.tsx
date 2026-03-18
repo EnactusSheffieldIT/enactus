@@ -174,6 +174,16 @@ export default function Home() {
               <p className="pb-5">One of our local impact projects, Intellect Interpreters, is a volunteering based project that provides free translation services for asylum seekers in the city of Sheffield. Working closely with the city of Sanctuary, a Sheffield Charity, our volunteers help with translation and interpretation at sessions during the week, as well as looking to find new ways to assist the charity though fundraising methods.</p>
             </div>
           </div>
+           {/* <div className="flex justify-center mb-10 mt-10 text-center font-">
+            <div className="project-item w-full md:w-[calc(50%-2rem)] bg-green-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+              <Image
+                src="/files/carte/carte-no-bg.png" width={400} height={200} alt="Carte" className="block w-[200px] md:w-[400px]"></Image>
+              <a href="/carte" className="font-extrabold text-3xl border-b-2 m-5 border-green-500 hover:tracking-wide hover:text-red-300">
+                <h1>JUST</h1>
+              </a>
+              <p className="pb-5">PLACEHOLDER</p>
+            </div>
+          </div> */}
         </div>
         <br></br>
       </div>
@@ -297,8 +307,8 @@ export default function Home() {
               <p className="pb-5" >The Social Secretary is responsible for organising social events that foster a positive, inclusive, and engaging culture within Enactus Sheffield. The role focuses on strengthening connections between members by planning a variety of socials throughout the year and encouraging participation across all teams. The Social Secretary also works closely with the executive board to promote events and support member wellbeing and morale.</p>
             </div>
           </div>
-          <div className="grid xl:grid-cols-4 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
-            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+          <div className="flex flex-wrap justify-center mb-10 mt-10 text-center gap-16 font-">
+            <div className="project-item w-full xl:w-[calc((100%-12rem)/4)] bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>INTELLECT INTERPRETERS PROJECT LEADER</h1>
               </div>
@@ -312,7 +322,7 @@ export default function Home() {
               </div>
               <p className="pb-5" >The Intellect Interpreters Project Leader is responsible for partnering up with organisations to provide interpretation services for asylum seekers. This role includes promoting the project, recruiting project members, and overseeing a team of interpreters.</p>
             </div>
-            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+            <div className="project-item w-full xl:w-[calc((100%-12rem)/4)] bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>CODECREATORS PROJECT LEADER</h1>
               </div>
@@ -326,7 +336,7 @@ export default function Home() {
               </div>
               <p className="pb-5" >CodeCreators project lead is responsible for planning sessions to be delivered to students, as well as a managing a team of mentors to assist with the teaching of classes.</p>
             </div>
-            <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+            <div className="project-item w-full xl:w-[calc((100%-12rem)/4)] bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>CARTE PROJECT LEADER</h1>
               </div>
@@ -340,7 +350,7 @@ export default function Home() {
               </div>
               <p className="pb-5" >The Carte Project Lead manages workshops and project activities, guiding a student team to transform artwork by individuals with learning disabilities into greeting cards and products. The role also supports production, sales, and volunteer coordination to generate sustainable income for partner charities. </p>
             </div>
-            {/* <div className="project-item bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+            {/* <div className="project-item w-full xl:w-[calc((100%-12rem)/4)] bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>JUST PROJECT LEADER</h1>
               </div>
