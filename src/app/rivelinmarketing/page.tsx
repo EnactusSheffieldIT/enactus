@@ -16,7 +16,7 @@ export default function Home() {
       </header>
 
       {/* About Section */}
-      <section className="bg-white shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12">
+      <section className="bg-white shadow-lg rounded-lg max-w-5xl w-full p-8 mb-12">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Who Are We?</h2>
         <p className="text-gray-600 leading-relaxed">
           We are a student-run social media management agency offering services tailored to small and medium-sized businesses, societies, and other associations at competitive prices. As a non-profit social enterprise, all revenue supports Enactus Sheffield, funding local and international volunteer projects at the University of Sheffield.
@@ -24,7 +24,7 @@ export default function Home() {
       </section>
 
       {/* Service Areas Section */}
-      <section className="bg-white shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12">
+      <section className="bg-white shadow-lg rounded-lg max-w-5xl w-full p-8 mb-12">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Service Areas</h2>
         <ul className="list-disc list-inside text-gray-600 leading-relaxed">
           <li>Original content creation</li>
@@ -42,7 +42,7 @@ export default function Home() {
         <p className="text-lg text-gray-700 italic">&#34;Empowering connections, one platform at a time.&#34;</p>
       </section>
 
-      <section className="bg-white shadow-lg rounded-lg max-w-4xl w-full p-8 mb-12 text-center">
+      <section className="bg-white shadow-lg rounded-lg max-w-5xl w-full p-8 mb-12 text-center">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-center">Meet the Team</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-8">
@@ -56,6 +56,61 @@ export default function Home() {
               />
               <p className="mt-4 font-semibold">Jiunn</p>
               <p className="text-blue-600">Project Leader</p>
+            </div>
+            <div className="text-center">
+              <Image
+                width={100}
+                height={100}
+                src="/files/rivelinmarketing/maia.jpg"
+                alt="Maia"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Maia</p>
+              <p className="text-blue-600">Project Member</p>
+            </div>
+            <div className="text-center">
+              <Image
+                width={100}
+                height={100}
+                src="/files/rivelinmarketing/coraline.jpg"
+                alt="Coraline"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Coraline</p>
+              <p className="text-blue-600">Project Member</p>
+            </div>
+            <div className="text-center">
+              <Image
+                width={100}
+                height={100}
+                src="/files/enactus_team/su.png"
+                alt="Su"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Su</p>
+              <p className="text-blue-600">Project Member</p>
+            </div>
+            <div className="text-center">
+              <Image
+                width={100}
+                height={100}
+                src="/files/rivelinmarketing/vyshnav.jpg"
+                alt="Vyshnav"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Vyshnav</p>
+              <p className="text-blue-600">Project Member</p>
+            </div>
+            <div className="text-center">
+              <Image
+                width={100}
+                height={100}
+                src="/files/rivelinmarketing/becca.jpg"
+                alt="Becca"
+                className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
+              />
+              <p className="mt-4 font-semibold">Becca</p>
+              <p className="text-blue-600">Project Member</p>
             </div>
           </div>
         </div>
