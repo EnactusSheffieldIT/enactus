@@ -50,6 +50,7 @@ export default function Home() {
                 <Link href="/carte">Carte</Link>
                 <Link href="/intellectinterpreters">Intellect Interpreters</Link>
                 <Link href="/rivelinmarketing">Rivelin Marketing</Link>
+                <Link href="/just">JUST</Link>
               </div>
             </div>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-5 border-teal-300 hover:text-yellow-400 hover:border-yellow-300 duration-150 text-2xl" target="_blank">Apply Now</Link>
@@ -83,6 +84,7 @@ export default function Home() {
                   <Link className="ml-5 p-2" href="/carte/#">Carte</Link>
                   <Link className="ml-5 p-2" href="/intellectinterpreters/#">Intellect Interpreters</Link>
                   <Link className="ml-5 p-2" href="/rivelinmarketing/#">Rivelin Marketing</Link>
+                  <Link className="ml-5 p-2" href="/just/#">JUST</Link>
                   <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide" target="_blank">Apply Now</Link>
                   <Link href="/#announcements" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide ">Announcements</Link>
                   <Link href="/#contact" className="p-2 border-t-2 m-2 border-teal-300 hover:tracking-wide ">Contact</Link>
