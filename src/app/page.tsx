@@ -174,16 +174,16 @@ export default function Home() {
               <p className="pb-5">One of our local impact projects, Intellect Interpreters, is a volunteering based project that provides free translation services for asylum seekers in the city of Sheffield. Working closely with the city of Sanctuary, a Sheffield Charity, our volunteers help with translation and interpretation at sessions during the week, as well as looking to find new ways to assist the charity though fundraising methods.</p>
             </div>
           </div>
-           {/* <div className="flex justify-center mb-10 mt-10 text-center font-">
+          <div className="flex justify-center mb-10 mt-10 text-center font-">
             <div className="project-item w-full md:w-[calc(50%-2rem)] bg-green-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
-                src="/files/carte/carte-no-bg.png" width={400} height={200} alt="Carte" className="block w-[200px] md:w-[400px]"></Image>
-              <a href="/carte" className="font-extrabold text-3xl border-b-2 m-5 border-green-500 hover:tracking-wide hover:text-red-300">
+                src="/files/just_logo.jpg" width={400} height={200} alt="Just" className="block w-[200px] md:w-[400px] rounded"></Image>
+              <a href="/just" className="font-extrabold text-3xl border-b-2 m-5 border-green-500 hover:tracking-wide hover:text-green-300">
                 <h1>JUST</h1>
               </a>
-              <p className="pb-5">PLACEHOLDER</p>
+              <p className="pb-5">Our newest project JUST aims to address the gap in legal and civic knowledge using education. This will be done using  interactive workshops, drop-in sessions, and an easy-to-use website to fully extend the project&apos;s reach. In the long term, JUST aims to educate individuals sufficiently to navigate legal and civic systems confidently and independently.</p>
             </div>
-          </div> */}
+          </div>
         </div>
         <br></br>
       </div>
@@ -241,7 +241,7 @@ export default function Home() {
               <Image
                 src="/files/enactus/enactus_no_text.png" width={300} height={200} alt="Elena" className="block w-[200px] md:w-[400px] rounded-xl"></Image>
               <div className="font-extrabold text-xl pb-5">
-                <h1>ELENA BOITAN</h1>
+                <h1>ELLA B</h1>
               </div>
               <div className="font-extrabold text-xl">
                 <h1>BA Business Management and Economics</h1>
@@ -350,7 +350,7 @@ export default function Home() {
               </div>
               <p className="pb-5" >The Carte Project Lead manages workshops and project activities, guiding a student team to transform artwork by individuals with learning disabilities into greeting cards and products. The role also supports production, sales, and volunteer coordination to generate sustainable income for partner charities. </p>
             </div>
-            {/* <div className="project-item w-full xl:w-[calc((100%-12rem)/4)] bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
+            <div className="project-item w-full xl:w-[calc((100%-12rem)/4)] bg-white p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <div className="font-extrabold text-2xl border-b-2 m-5 border-yellow-500">
                 <h1>JUST PROJECT LEADER</h1>
               </div>
@@ -362,8 +362,8 @@ export default function Home() {
               <div className="font-extrabold text-xl">
                 <h1>MA Law (Conversion)</h1>
               </div>
-              <p className="pb-5" >(Placeholder)</p>
-            </div> */}
+              <p className="pb-5" ></p>
+            </div>
           </div>
         </div>
         <br></br>
@@ -431,9 +431,26 @@ export default function Home() {
           {/* Timeline content */}
           <div className="w-[80%] max-w-[1000px] md:translate-x-[42px] translate-x-[8px]">
             <div className="timeline-item flex items-center mb-20">
+              <div className="w-[45%] pr-5">
+                <Image
+                  src="/files/nationals/enactus2026.png"
+                  width={400}
+                  height={300}
+                  alt="2022 Award"
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
+              <div className="timeline-dot w-4 h-4 bg-yellow-500 rounded-full z-10"></div>
+              <div className="w-[45%] pl-8">
+                <div className="text-3xl font-bold">2026</div>
+                <p>This year we got into the top 20 and competed once again in the nationals competition, just losing out to the overall winner Enactus TU Dublin!</p>
+              </div>
+            </div>
+
+            <div className="timeline-item flex items-center mb-20">
               <div className="w-[45%] text-right pr-8">
-                <div className="text-3xl font-bold">2024</div>
-                <p>In 2024 we got in the top 20 in the nationals competition hosted in London, and are looking forward to next year&apos;s.</p>
+                <div className="text-3xl font-bold">2025</div>
+                <p>In 2025 we got into the top 20 in the nationals competition hosted in London!</p>
               </div>   <div className="timeline-dot w-4 h-4 bg-yellow-500 rounded-full z-10"></div>
               <div className="w-[45%] pl-8">
                 <Image
@@ -458,15 +475,15 @@ export default function Home() {
               </div>
               <div className="timeline-dot w-4 h-4 bg-yellow-500 rounded-full z-10"></div>
               <div className="w-[45%] pl-8">
-                <div className="text-3xl font-bold">2023</div>
-                <p>This year we got into regional finals and competed in the nationals competition.</p>
+                <div className="text-3xl font-bold">2024</div>
+                <p>This year we got into regional finals and competed in the nationals competition!</p>
               </div>
 
             </div>
 
             <div className="timeline-item flex items-center">
               <div className="w-[45%] text-right pr-8">
-                <div className="text-3xl font-bold">2022</div>
+                <div className="text-3xl font-bold">2023</div>
                 <p className="mb-4">National Runner up!</p>
                 <p>This year we came second in the nationals competition out of 60 other Enactus teams!</p>
               </div>

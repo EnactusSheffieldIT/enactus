@@ -19,7 +19,7 @@ export default function Home() {
         </header>
 
         {/* About Section */}
-        <section className="py-16 px-4">
+        <section className="bg-blue-50 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold">What is CodeCreators?</h2>
             <p className="text-lg text-gray-700">
@@ -34,7 +34,7 @@ export default function Home() {
         </section>
 
         {/* Course Layout Section */}
-        <section className="bg-blue-50 py-16 px-4">
+        <section className="bg-gray-50 py-16 px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold text-center">Course Layout</h2>
             <p className="text-center text-lg text-gray-700 mt-4">
@@ -67,7 +67,7 @@ export default function Home() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-16 px-4">
+        <section className="bg-blue-50 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold">What&apos;s in it for you?</h2>
             <p className="text-lg text-gray-700">
@@ -79,7 +79,7 @@ export default function Home() {
         </section>
 
         {/* Pricing and Registration Section */}
-        <section className="bg-blue-100 py-16 px-4">
+        <section className="bg-gray-50 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold">Interested in Joining?</h2>
             <p className="text-lg text-gray-700">
@@ -100,7 +100,7 @@ export default function Home() {
         </section>
 
         {/* Team Section */}
-        <section className="py-16 px-4">
+        <section className="bg-blue-50 py-16 px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold text-center">Meet the Team</h2>
             <div className="mt-8 flex flex-wrap justify-center gap-8">
@@ -153,7 +153,7 @@ export default function Home() {
         </section>
 
         {/* Join the Team Section */}
-        <section className="bg-gray-100 py-16 px-4">
+        <section className="bg-gray-50 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold">Interested in Joining the Team?</h2>
             <p className="text-lg text-gray-700">
