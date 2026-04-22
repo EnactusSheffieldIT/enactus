@@ -177,7 +177,7 @@ export default function Home() {
           <div className="flex justify-center mb-10 mt-10 text-center font-">
             <div className="project-item w-full md:w-[calc(50%-2rem)] bg-green-50 p-2 rounded-2xl flex flex-col items-center border-b-4 border-l-8 border-black/50">
               <Image
-                src="/files/just_logo.jpg" width={400} height={200} alt="Just" className="block w-[200px] md:w-[400px] rounded"></Image>
+                src="/files/just_logo.png" width={400} height={200} alt="Just" className="block w-[200px] md:w-[400px] rounded"></Image>
               <a href="/just" className="font-extrabold text-3xl border-b-2 m-5 border-green-500 hover:tracking-wide hover:text-green-300">
                 <h1>JUST</h1>
               </a>

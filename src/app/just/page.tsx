@@ -7,7 +7,7 @@ export default function Home() {
             <Head></Head>
             <div className="bg-gray-50 text-gray-800">
                 <div className="[&>*]:mx-auto text-center max-w-[700px] mx-auto pt-4">
-                    <Image width={400} height={400} src="/files/just_logo.jpg"
+                    <Image width={400} height={400} src="/files/just_logo.png"
                         className="text-center rounded-2xl" alt="JUST Logo" />
                     <p className="mt-4 text-lg md:text-xl text-gray-600 pb-5">
                         
