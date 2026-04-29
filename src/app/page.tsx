@@ -153,7 +153,7 @@ export default function Home() {
               <a href="/rivelinmarketing" className="font-extrabold text-3xl border-b-2 m-5 border-yellow-500 hover:tracking-wide hover:text-yellow-300">
                 <h1>RIVELIN MARKETING</h1>
               </a>
-              <p className="pb-5" >Our in-house marketing team Rivelin Marketing, lead by the Public Relations Director, markets all of our projects online (such as on Instagram or LinkedIn) to raise awareness of our projects and our members achievements. </p>
+              <p className="pb-5" >Our in-house marketing team Rivelin Marketing, led by the Public Relations Director, markets all of our projects online (such as on Instagram or LinkedIn) to raise awareness of our projects and our members achievements. </p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-flow-row mb-10 mt-10 text-center gap-16 font-">
