@@ -141,7 +141,7 @@ export default function Home() {
               <Image
                   width={100}
                   height={100}
-                  src="/files/codecreators/cc-logo.png"
+                  src="/files/codecreators/ayush.jpg"
                   alt="Ayush"
                   className="w-32 h-32 rounded-full object-cover mx-auto border border-black"
                 />

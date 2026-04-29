@@ -81,13 +81,13 @@ export default function Home() {
               />
             </div>
           </h1>
-          {/* <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd6RnK9K87Fh9sst1oHiv36ZCZVoRDVQLmWcHANXpUG9Yrhpg/viewform?usp=dialog"
+          <Link
+            href="https://forms.gle/GxXW2Crz3fCCwTnU7"
             className="sm:mt-8 border-2 p-3 text-center hover:bg-white hover:text-black border-white text-white text-xl sm:text-3xl font-extrabold absolute bottom-20"
             target="_blank"
           >
-            We are currently looking for new members: <br></br> CLICK HERE TO REGISTER NOW!
-          </Link> */}
+            JOIN OUR COMMITEE FOR 2026/2027!: <br></br> REGISTER YOUR NOMINATION AT THE EGM
+          </Link>
         </div>
 
         {/* Add the wave divider and partner section */}
@@ -362,7 +362,7 @@ export default function Home() {
               <div className="font-extrabold text-xl">
                 <h1>MA Law (Conversion)</h1>
               </div>
-              <p className="pb-5" ></p>
+              <p className="pb-5" >As JUST is still in its idea stage, the project lead takes on responsibility for kick-starting the project. This has included competing in ideas4impact competition, where the idea was pitched. The role also involves building partnerships with local organisations to run workshops that help bridge the gap in legal and civic knowledge.</p>
             </div>
           </div>
         </div>
